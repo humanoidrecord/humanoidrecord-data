@@ -1,0 +1,108 @@
+{
+  "factsheetVersion": 1,
+  "scope": {
+    "statement": "Counts describe records within this register; they are not estimates of the humanoid robotics market.",
+    "selection": "All data/robots/*.json records included in the pinned snapshot.",
+    "unitWarning": "Robot records, capability records, claim sources, artifacts and actuator groups use separate denominators.",
+    "videoAssessment": "No percentage about demonstrated autonomy or teleoperation is calculated without a defined, reviewed video unit."
+  },
+  "cutoff": "2026-09-27",
+  "dataSchemaVersion": "2.2",
+  "definitionsVersion": "1",
+  "provenance": {
+    "datasetSha256": "b02f89a04d032a6742704175872b5b3050c0832fb6222e78627808e07cc64b5c",
+    "dataGitHead": "f5f41e3b8debfce3422f9e7fac4a89d5a7ab8e2a",
+    "generatorSha256": "1fb139a5b5c20f0c5444b56902c1a69731eb37eceee2380df710943ec79035c3",
+    "generatorFiles": [
+      {
+        "path": "tools/data-quality.js",
+        "sha256": "fda08cb19d25ba5cc10305579506c5671deb0943c418db4a900b43b3dc475973"
+      },
+      {
+        "path": "tools/factsheet.js",
+        "sha256": "bbabc458b6d2a7da8e901756ff647b41de342e98097bacda5dd6d9032199f786"
+      }
+    ]
+  },
+  "metrics": {
+    "robotRecords": {
+      "total": 29,
+      "withCapabilities": 18
+    },
+    "capabilityRecords": {
+      "total": 26,
+      "status": {
+        "claimed": 4,
+        "demonstrated": 21,
+        "shipped": 1,
+        "unknown": 0
+      },
+      "autonomy": {
+        "teleoperated": 10,
+        "scripted": 1,
+        "autonomous": 6,
+        "unknown": 9
+      },
+      "sourceMediaType": {
+        "video": 0,
+        "non_video": 26,
+        "unknown": 0
+      }
+    },
+    "claimSourceRecords": {
+      "total": 341,
+      "reviewStatus": {
+        "supported": 22,
+        "insufficient": 54,
+        "inaccessible": 12,
+        "conflicting": 0,
+        "unreviewed": 0,
+        "unknown": 253
+      },
+      "mediaType": {
+        "video": 0,
+        "non_video": 88,
+        "unknown": 253
+      },
+      "queuedForReview": 319
+    },
+    "simulation": {
+      "robotReviewStatus": {
+        "found": 7,
+        "not_confirmed": 22,
+        "missing": 0,
+        "unknown": 0
+      },
+      "artifacts": 11,
+      "compatibility": {
+        "documented": 3,
+        "tested": 0,
+        "unknown": 0
+      }
+    },
+    "actuatorArchitecture": {
+      "robotReviewStatus": {
+        "found": 3,
+        "not_confirmed": 26,
+        "missing": 0,
+        "unknown": 0
+      },
+      "groups": {
+        "total": 4,
+        "withDrive": 2,
+        "withTransmission": 2,
+        "withMotion": 0,
+        "withArchitecture": 0,
+        "unknown": 0
+      }
+    },
+    "dataGaps": {
+      "robotsWithoutHandDof": 23,
+      "robotsWithoutFingersPerHand": 29,
+      "robotsWithoutSimulation": 0,
+      "robotsWithoutActuatorArchitecture": 0,
+      "capabilityRecordsWithoutSourceMediaType": 0,
+      "capabilityRecordsWithoutTimestamp": 26
+    }
+  }
+}

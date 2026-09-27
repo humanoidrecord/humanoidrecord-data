@@ -24,6 +24,7 @@ See `schema.md` for the full field-by-field rules.
 - `robots/<slug>.json` — one file per robot, the source of truth.
 - `robots.json` — every record, combined into one array.
 - `robots.csv` — flat export, same fields as the humanoidrecord.com site.
+- `factsheets/<cutoff>/` — frozen inputs, counts, Markdown and exact generator code for reproducibility.
 - `media/<slug>/<file>` — licensed manufacturer imagery and patent
   drawings, when a robot record has a `media` field; each is captioned
   with its license and source in `robots/<slug>.json`. Never evidence for
