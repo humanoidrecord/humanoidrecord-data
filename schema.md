@@ -14,7 +14,7 @@ One JSON file per robot in `data/robots/<slug>.json`. `<slug>` must match the
 | `announced` | object | yes | `{ date: YYYY-MM-DD, source }` |
 | `specs` | object | yes | see Spec fields below |
 | `price_history` | array | yes (may be empty) | see Price entries below |
-| `delivery` | object | yes | `{ status, timeline: [] }` |
+| `delivery` | object | yes | `{ status, timeline: [], evidence?: [] }` |
 | `notes` | array | no | free-text notes, e.g. flagging contradicting sources |
 | `updated` | string | yes | `YYYY-MM-DD`, last edit date of the file |
 
@@ -392,10 +392,23 @@ array of dated events:
 { "date": "YYYY-MM-DD", "event": "announced|first-demo|preorders-open|first-customer-delivery|volume-estimate", "detail": "string", "quantity_min": null, "quantity_max": null, "source": { ... } }
 ```
 
-Only include an event once it has real evidence. Do not invent a
-`first-customer-delivery` event to fill a gap — if it hasn't happened, the
-timeline simply stops at the last real event, and `delivery.status` reflects
-that (`claimed` or `demonstrated`, not `shipped`).
+Only include an event once its date has real evidence. Do not invent a
+`first-customer-delivery` event to fill a date gap. The timeline then stops at
+the last dated event. A `shipped` status may still be supported by undated
+physical-receipt evidence recorded separately below.
+
+When a source supports physical receipt but does not establish an exact
+delivery date, record it in the optional `delivery.evidence` array instead of
+inventing a timeline date:
+
+```json
+{ "detail": "Named customer shown with the physical unit.", "source": { ... } }
+```
+
+When present, `delivery.evidence` must be a non-empty array. Every item needs a
+non-empty `detail` and a standard source object. Source review describes how
+well that source supports the receipt claim; it does not establish an exact
+delivery day or independent verification.
 
 ## The three statuses, precisely
 
@@ -416,11 +429,12 @@ renders, heavily cut marketing reels, and "coming soon" trailers do not
 qualify.
 
 ### shipped
-A named customer, with photographic or video evidence of a physical unit in
-their possession, plus at least one of: an invoice, a serial number, an
-independent unboxing, or a customs/import record. A signed contract,
-preorder, deposit, or a "shipping in Q4" statement is not shipped — it is
-`claimed` (or `demonstrated` if a working unit was shown).
+A named customer, with evidence that a physical unit of the exact robot model
+is in their possession. Evidence can be a clear photo or video, invoice,
+serial number, independent unboxing, or customs/import record; these are
+alternative evidence routes rather than cumulative requirements. A signed
+contract, preorder, deposit, or a "shipping in Q4" statement is not shipped —
+it is `claimed` (or `demonstrated` if a working unit was shown).
 
 ## Contradicting sources
 

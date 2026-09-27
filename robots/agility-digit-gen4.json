@@ -30,69 +30,60 @@
   "price_history": [],
   "delivery": {
     "status": "shipped",
-    "timeline": [
+    "timeline": [],
+    "evidence": [
       {
-        "date": "2020-01-06",
-        "event": "first-customer-delivery",
-        "detail": "Ford Motor Company becomes Digit's first named commercial customer, testing it for last-mile delivery paired with autonomous vehicles.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "GXO reports Digit robots operational at its SPANX warehouse by the 27 June 2024 publication; the source does not establish the delivery day or count.",
         "source": {
-          "url": "https://en.wikipedia.org/wiki/Agility_Robotics",
-          "quote": "Ford Motor Company (2020) — First commercial customer; Purpose: explore last-mile delivery",
+          "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+          "quote": "In the SPANX facility, Digit robots are assisting with repetitive tasks",
           "accessed": "2026-09-27",
           "media_type": "article",
-          "publisher_type": "independent",
+          "publisher_type": "official",
+          "variant": "Digit deployed at GXO SPANX",
+          "published": "2024-06-27",
           "review": {
-            "status": "insufficient",
+            "status": "supported",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+            "reason": "Customer primary source supports operational deployment by publication, not a 2024-01-01 handover."
           }
-        },
-        "sector": "automotive"
+        }
       },
       {
-        "date": "2024-01-01",
-        "event": "first-customer-delivery",
-        "detail": "GXO Logistics deploys Digit at its SPANX facility near Atlanta, Georgia, under a Robots-as-a-Service contract; GXO's own news page shows a photo of the unit and describes it as GXO's most advanced live humanoid deployment.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "Agility retrospectively identifies the customer-site generation at GXO as Digit 4. This links GXO’s operational report to this record; it does not establish an exact arrival date or independent verification.",
         "source": {
-          "url": "https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/",
-          "quote": "GXO has made the most progress with Digit, a humanoid robot that has been optimized to fit our needs and integrated with other automated technology in the warehouse.",
+          "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+          "quote": "Digit 4 has logged more than 65,000 hours of operational time and work across numerous customer sites in North America, including GXO",
           "accessed": "2026-09-27",
           "media_type": "article",
-          "publisher_type": "independent",
+          "publisher_type": "official",
+          "variant": "Digit 4",
+          "published": "2026-09-15",
           "review": {
-            "status": "insufficient",
+            "status": "supported",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+            "reason": "Manufacturer explicitly identifies GXO as a Digit 4 customer site; paired with GXO’s customer-primary deployment report. No exact handover date or count is proven."
           }
-        },
-        "sector": "logistics"
+        }
       },
       {
-        "date": "2023-10-18",
-        "event": "first-customer-delivery",
-        "detail": "Amazon begins testing Digit at its own robotics facility for tote recycling; Amazon's own newsroom names itself as the customer and publishes photos of the physical unit working alongside Amazon employees.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "Amazon announced it would begin testing Digit; this wording does not establish receipt on publication day.",
         "source": {
           "url": "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",
-          "quote": "Broadening our partnership with Agility Robotics, we will begin testing their bipedal robot, Digit, for use in our operations.",
+          "quote": "we will begin testing their bipedal robot, Digit, for use in our operations.",
           "accessed": "2026-09-27",
           "media_type": "article",
-          "publisher_type": "independent",
+          "publisher_type": "official",
+          "variant": "Digit (generation unspecified)",
           "review": {
             "status": "insufficient",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+            "reason": "Future-tense testing statement alone does not prove receipt or this record’s hardware generation."
           }
-        },
-        "sector": "logistics"
+        }
       }
     ]
   },
@@ -161,13 +152,13 @@
     }
   ],
   "notes": [
-    "This record covers the hardware generation of Digit that actually shipped to named customers (Ford 2020, Amazon 2023, GXO 2023-2024; Agility also claims a Toyota Motor Manufacturing Canada deployment per its own account, not independently sourced here).",
-    "No independently sourced height/weight/payload/battery specs for this specific generation were located during this build, so specs is intentionally empty rather than reusing the newer Digit 5 numbers. See agility-digit for the current (Digit 5) generation's claimed specs, which is a different, not-yet-shipped hardware generation.",
+    "This record covers Digit 4, the generation Agility retrospectively identifies at GXO and other production-floor customers after roughly three years of use by September 2026. Ford’s CES 2020 first-customer announcement concerns an earlier Digit generation and is not evidence for Digit 4. GXO’s operational deployment supports shipped status for this exact generation.",
+    "No directly sourced height, weight, payload, or battery specifications for Digit 4 were located during this build, so specs remain empty rather than borrowing Digit 5 figures. See agility-digit for the distinct Digit 5 generation and its claimed specifications.",
     "Digit is sold as Robots-as-a-Service, not a one-time purchase, so price_history is intentionally empty.",
-    "Shipped bar applied (2026-09-20): both GXO's own news page (gxo.com, real photo file Digit-image-min.jpg served from GXO's own domain) and Amazon's own newsroom (aboutamazon.com, two photos of the physical unit) name themselves as customers with images of the unit on their own channels, replacing the earlier Wikipedia-sourced GXO citation and adding Amazon as a second named, photographed 2023-2024 delivery of this same generation.",
-    "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): no independently sourced spec sheet for this specific (2020-2024) hardware generation was located, consistent with the existing note that height/weight/battery specs for this generation are intentionally left unsourced rather than reused from the newer Digit 5. delivery.timeline[].sector set to automotive (Ford) and logistics (GXO, Amazon)."
+    "Shipped status rests on GXO’s named operational Digit deployment, with Agility’s 15 September 2026 account explicitly identifying the GXO robots as Digit 4. Amazon’s 2023 future-tense testing announcement remains insufficient for customer receipt in that report; Ford 2020 is excluded from this generation. Exact delivery dates, unit counts, and independent variant verification remain unknown.",
+    "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type remain omitted for lack of sourced figures for this generation. No exact first-customer-delivery event or sector is asserted."
   ],
-  "updated": "2026-09-21",
+  "updated": "2026-09-27",
   "simulation": {
     "review": {
       "status": "not_confirmed",

@@ -55,27 +55,44 @@
           "accessed": "2026-09-20"
         },
         "sector": "automotive"
-      },
+      }
+    ],
+    "evidence": [
       {
-        "date": "2026-06-25",
-        "event": "first-customer-delivery",
-        "detail": "Delivered to BMW Group Plant Spartanburg (Hall 52), following on from Figure 02's 30,000-vehicle run at the same plant.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "BMW’s photo compilation captions identify Figure 03 at BMW Group Plant Spartanburg by 25 June 2026; the caption establishes reported physical presence, not sale or handover day.",
         "source": {
           "url": "https://www.press.bmwgroup.com/global/photo/compilation/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
           "quote": "Humanoid robot Figure 03 at BMW Group Plant Spartanburg.",
           "accessed": "2026-09-27",
           "media_type": "article",
           "publisher_type": "official",
+          "variant": "Figure 03",
+          "published": "2026-06-25",
           "review": {
-            "status": "insufficient",
+            "status": "supported",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+            "reason": "BMW’s dated caption supports the limited claim that Figure 03 was physically present at its Spartanburg plant. It does not establish an arrival or handover day, sale, or unit count."
           }
-        },
-        "sector": "automotive"
+        }
+      },
+      {
+        "detail": "Figure reports that Figure 03 arrived in Hall 52 at BMW Group Plant Spartanburg for a first logistics demonstration; arrival day and commercial terms are not stated.",
+        "source": {
+          "url": "https://www.figure.ai/news/f-03-at-bmw",
+          "quote": "Figure 03 - arrived in Hall 52",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Figure 03",
+          "published": "2026-06-30",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Manufacturer primary account supports arrival and demonstration at named customer, not exact handover day or sale."
+          }
+        }
       }
     ]
   },
@@ -115,11 +132,11 @@
   ],
   "notes": [
     "No manufacturer-published height/weight/DoF spec sheet for Figure 03 was located on figure.ai during this build (figure.ai/product returned HTTP 404); specs are left empty rather than filled from secondary blogs. Follow-up: check Figure's press kit or a dated product page once published.",
-    "Shipped bar applied (2026-09-20): BMW's own press portal (press.bmwgroup.com) published a 7-photo compilation on 2026-06-25 captioned \"Humanoid robot Figure 03 at BMW Group Plant Spartanburg\" -- a named customer (BMW Group Plant Spartanburg) with photographic evidence of the physical unit, published via the customer's own channel. Per this site's shipped rule, a named customer plus image via the customer's or an independent channel is sufficient; invoice/serial/unboxing/customs are alternatives, not an added requirement. Upgraded to shipped. (An earlier note in this file required invoice/serial/unboxing/customs in addition to the photo; that conjunctive reading was too strict and is removed.)",
-    "delivery.timeline[].sector set to automotive on all three events (2026-09-21): all are tied to the BMW Group Plant Spartanburg deployment.",
+    "Shipped bar: BMW’s own dated photo captions identify a Figure 03 at Plant Spartanburg, and Figure says the model arrived in Hall 52 for a logistics demonstration. This supports exact-model presence at a named customer, but no exact delivery day, sale, transfer of title, quantity, or scaled operation.",
+    "The announced and first-demo timeline events retain their automotive sector. No exact first-customer-delivery event is asserted.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Figure 03 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21",
+  "updated": "2026-09-27",
   "media": [
     {
       "type": "patent",

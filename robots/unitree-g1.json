@@ -158,24 +158,60 @@
           "quote": "US $13.5K",
           "accessed": "2026-09-20"
         }
-      },
+      }
+    ],
+    "evidence": [
       {
-        "date": "2026-04-01",
-        "event": "first-customer-delivery",
-        "detail": "Delivered to Durham University's Department of Computer Science, which named its G1 Edu unit 'Alan' and published its own photo of the robot for research use.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "Fraunhofer IPA says it received a Unitree G1 EDU-4 with Dex3-1 hands in May 2025; the source gives a month, not a day.",
         "source": {
-          "url": "https://www.durham.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
-          "quote": "Our Department of Computer Science has welcomed an exciting new arrival: Alan, a humanoid robot that will support a wide range of future research. ... Alan is a Unitree G1 Edu robot",
-          "accessed": "2026-09-20",
+          "url": "https://www.ipa.fraunhofer.de/en/press-media/press_releases/benchmark-for-humanoid-robots.html",
+          "quote": "The technical basis was the Unitree G1 EDU-4 with Dex3-1 3-finger hands delivered in May 2025 with firmware version 1.04.",
+          "accessed": "2026-09-27",
           "media_type": "article",
-          "publisher_type": "independent",
+          "publisher_type": "official",
+          "variant": "Unitree G1 EDU-4",
+          "published": "2026-05-27",
           "review": {
-            "status": "inaccessible",
+            "status": "supported",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+            "reason": "Receiving research institute identifies exact variant and delivery month, but not exact day."
+          }
+        }
+      },
+      {
+        "detail": "Fraunhofer IPA separately describes a G1 crate arriving at its campus and an unboxing event; this supports physical receipt but no exact day.",
+        "source": {
+          "url": "https://interaktiv.ipa.fraunhofer.de/embodied-ai/humanoide-roboter_statusquo-potenziale-forschungsfelder_teil1/",
+          "quote": "deren humanoider Roboter G1 nach mehreren Monaten Lieferzeit endlich im Automatisierungsbereich des Fraunhofer IPA angekommen war.",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Unitree G1",
+          "published": "2026-01-22",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Customer primary account supports campus receipt; publication is later than receipt."
+          }
+        }
+      },
+      {
+        "detail": "Durham University says its Computer Science department has welcomed Alan, a Unitree G1 Edu robot; publication on 1 April 2026 is not a delivery date.",
+        "source": {
+          "url": "https://dur.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
+          "quote": "Alan is a Unitree G1 Edu robot",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Unitree G1 Edu",
+          "published": "2026-04-01",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "University primary report and image support receipt of a G1 Edu, without arrival day."
           }
         }
       }
@@ -278,11 +314,11 @@
   "notes": [
     "Height/weight conflict: Unitree's current product page (accessed 2026-09-20) states \"1320x450x200mm\" and \"About 35kg\", while The Robot Report's May 2024 launch coverage stated 127 cm and 47 kg for the same base G1. Both are shown here as the current manufacturer figure; the discrepancy is not resolved.",
     "G1 is listed for direct purchase on Unitree's own storefront (checkout, no waitlist), which is strong claimed-level evidence of availability.",
-    "Shipped bar applied (2026-09-20): Durham University's own website (durham.ac.uk, published 1 April 2026) names the Department of Computer Science as the owner of a Unitree G1 Edu robot it calls 'Alan', with a photo of the unit ('Alan-robot-WEB.png') hosted on Durham's own site. This is a named customer with photographic evidence published on the customer's own channel, which satisfies this site's shipped rule without needing an invoice, serial number, unboxing, or customs record as an additional requirement. Upgraded from demonstrated to shipped; the earlier note here (requiring a serial number/invoice/customs record on top of a named buyer with a photo) applied too strict a reading and is removed.",
+    "Shipped bar: Fraunhofer IPA states it received a Unitree G1 EDU-4 in May 2025 and separately reports campus unboxing. Durham University reports receipt of its G1 Edu “Alan” by 1 April 2026. Both are named external recipients; neither source supports an exact day of first customer delivery. The previous Durham URL was inaccessible; the dur.ac.uk address is accessible.",
     "The 100m obstacle race result is attributed to G1 per Unitree's own social post naming the G1 for this event; the Shanghai Gaoyi Technology government press release (source above) confirms the time and team but does not itself name the robot model, since it covers both the G1 obstacle result and the H1 400m result from the same subsidiary team in one paragraph.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for G1 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21",
+  "updated": "2026-09-27",
   "results": [
     {
       "event": "world-humanoid-robot-games-2025",

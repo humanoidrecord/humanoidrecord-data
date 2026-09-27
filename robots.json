@@ -963,27 +963,26 @@
             "accessed": "2026-09-20"
           },
           "sector": "automotive"
-        },
+        }
+      ],
+      "evidence": [
         {
-          "date": "2025-03-18",
-          "event": "first-customer-delivery",
-          "detail": "Pilot at Mercedes-Benz Digital Factory Campus Berlin-Marienfelde: Mercedes-Benz's own press release confirms Apollo units are physically on site collecting production data, published with photos on Mercedes-Benz's own media channel.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "Mercedes-Benz says Apollo units were present at its Digital Factory Campus and collecting data in a production environment by its 18 March 2025 publication. The source does not identify their hardware generation or establish an arrival day, transaction type, or quantity.",
           "source": {
-            "url": "https://media.mbusa.com/releases/release-cf381cd2fcff624ae37d3911631103dc-mercedes-benz-accelerates-the-transformation-of-its-production-network-by-integrating-ai-and-humanoid-robots-at-its-digital-factory-campus-in-berlin",
-            "quote": "Mercedes-Benz is testing the use of Apollo, a humanoid robot from Apptronik, in production.",
-            "accessed": "2026-09-20",
+            "url": "https://group.mercedes-benz.com/company/production/production-network/mbdfc-humanoid-robots.html",
+            "quote": "Apollo robots have been collecting data in a production environment",
+            "accessed": "2026-09-27",
             "media_type": "article",
             "publisher_type": "official",
+            "variant": "Apollo (hardware generation not specified by source)",
+            "published": "2025-03-18",
             "review": {
-              "status": "inaccessible",
+              "status": "supported",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The source returned HTTP 404 during the review, so the claim could not be re-established."
+              "reason": "Mercedes-Benz customer-primary text supports physical Apollo pilot presence at its facility; it does not identify a hardware generation, exact arrival day, unit count, or sale."
             }
-          },
-          "sector": "automotive"
+          }
         }
       ]
     },
@@ -1010,12 +1009,12 @@
     ],
     "notes": [
       "Apptronik's own site (apptronik.com/apollo) returned no fetchable content during this research session; all specs here are sourced from The Robot Report's launch and Mercedes-Benz pilot coverage instead.",
-      "Shipped bar applied (2026-09-20): Mercedes-Benz's own press release (media.mbusa.com, 2025-03-18) names Mercedes-Benz Digital Factory Campus Berlin-Marienfelde as the site, confirms Apollo units are physically present and collecting production data, and is published with a photo gallery on Mercedes-Benz's own media channel. Per this site's shipped rule (named customer + image via customer's or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement), this qualifies as shipped with 'pilot' noted in the detail, since Mercedes-Benz itself frames it as testing. Upgraded from demonstrated to shipped; an earlier note here required an invoice/serial/unboxing/customs record in addition to the photo, which was too strict, and is removed.",
+      "Shipped bar: Mercedes-Benz’s 18 March 2025 report names Apollo at its Digital Factory Campus and describes on-site production-environment data collection on its own channel. This supports a named physical customer pilot of Apollo, while the hardware generation, exact handover date, sale, count, and scaled deployment remain unproven. The former media.mbusa.com URL returned 404; the cited Mercedes-Benz group page is accessible.",
       "The separate GXO/Apptronik relationship (gxo.com, Aug 2024) does not clear the same bar: GXO's own news page (https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/) lists Apollo alongside Digit and 'Reflex' but describes GXO as still evaluating Apollo in a lab setting before any live-facility deployment, unlike Digit which GXO describes as already live -- so Apollo-at-GXO is not treated as a second shipped delivery here; the Mercedes-Benz pilot is what carries this record to shipped.",
-      "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): apptronik.com/apollo returned HTTP 404 during this pass, and no other manufacturer page with a literal, directly quotable figure for these fields was located; Apollo is sold via direct enterprise pilots (Mercedes-Benz, GXO), not a public storefront. delivery.timeline[].sector set to automotive on the Mercedes-Benz events.",
+      "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type remain omitted for lack of sourced figures; Apollo was offered through enterprise pilots. The Mercedes-Benz first-demo event retains its automotive sector; no dated delivery event is asserted.",
       "locomotion left out (2026-09-21): this record covers the original 2023 Apollo generation, not the later modular Apollo 2 (which apptronik.com/apollo/apollo-2 explicitly offers as \"a bipedal configuration\" or \"a wheeled base\"). The Robot Report's 2023 unveil article and the Mercedes-Benz Digital Factory Campus Berlin-Marienfelde press release/MANUS glove coverage used for this record's shipped status do not state which mobility base was used on site. No literal quote pins the original Apollo or its Mercedes deployment to legs vs. wheels, so the field stays empty per the task's Apollo special case (use what the source says about the Mercedes deployment, else omit)."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-27",
     "media": [
       {
         "type": "patent",
@@ -1140,7 +1139,7 @@
     },
     "price_history": [],
     "delivery": {
-      "status": "shipped",
+      "status": "demonstrated",
       "timeline": [
         {
           "date": "2024-04-17",
@@ -1153,27 +1152,44 @@
             "quote": "This week we announced the retirement of our hydraulic Atlas and unveiled what comes next—a fully electric Atlas robot designed for real-world applications.",
             "accessed": "2026-09-20"
           }
-        },
+        }
+      ],
+      "evidence": [
         {
-          "date": "2026-01-04",
-          "event": "first-customer-delivery",
-          "detail": "Pilot at Hyundai Motor Group Metaplant America (Ellabell, GA): CBS 60 Minutes correspondent Bill Whitaker visited the plant in person and filmed Atlas sorting roof racks; an independent outlet, not Boston Dynamics or Hyundai, observed and photographed the physical unit on Hyundai's site.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "Boston Dynamics describes an electric Atlas prototype pilot at Hyundai’s Georgia metaplant in fall 2025. This does not establish deployment of the distinct 2026 product version recorded here.",
           "source": {
-            "url": "https://www.therobotreport.com/boston-dynamics-shows-atlas-humanoid-working-georgia-hyundai-plant/",
-            "quote": "Atlas practiced sorting roof racks without human help",
+            "url": "https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/",
+            "quote": "In the fall, we put Atlas to the test at the Hyundai metaplant in Georgia",
             "accessed": "2026-09-27",
             "media_type": "article",
-            "publisher_type": "independent",
+            "publisher_type": "official",
+            "variant": "pre-production electric Atlas prototype",
+            "published": "2026-01-05",
             "review": {
               "status": "insufficient",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+              "reason": "Prototype customer-site observation is not evidence that the later product-version Atlas reached Hyundai. Publication date is not a delivery day."
             }
-          },
-          "sector": "automotive"
+          }
+        },
+        {
+          "detail": "Boston Dynamics unveiled the product version of Atlas in January 2026 and described its customer fleet shipments as scheduled for later in 2026.",
+          "source": {
+            "url": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/",
+            "quote": "product version of Atlas",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "2026 Atlas product version",
+            "published": "2026-01-05",
+            "review": {
+              "status": "insufficient",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "The product-version announcement and future shipment schedule do not establish any product-version customer receipt."
+            }
+          }
         }
       ]
     },
@@ -1256,11 +1272,11 @@
       "Height/weight conflict: several outlets covering the April 2024 unveiling (aggregator sites, not manufacturer-sourced) reported roughly 1.5 m and 89 kg for electric Atlas, while the current official bostondynamics.com/atlas page (accessed 2026-09-20) states 1.9 m and 90 kg. Because the 1.5 m figure could not be traced to a manufacturer statement, only the current official page value is recorded here as claimed; the discrepancy is flagged rather than resolved.",
       "Payload: the official page lists 50 kg instant / 30 kg sustained lift capacity; only the instant figure is recorded in the single-value `payload_kg` field per schema.",
       "Full-scale Hyundai production deployment is still ramping (Boston Dynamics/Hyundai have said full introduction to production is targeted for 2028).",
-      "Shipped bar applied (2026-09-20): the January 2026 CBS 60 Minutes visit is an independent-party (CBS, not Boston Dynamics or Hyundai) on-site observation of a named customer (Hyundai Motor Group Metaplant America, Ellabell, GA) with video/photo evidence of the physical unit performing real work. Per this site's shipped rule (named customer + image via the customer's own or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement), this qualifies as shipped, with 'pilot' noted since 2028 is cited as the target for full production deployment. Upgraded from demonstrated to shipped; an earlier note here required invoice/serial evidence in addition to the observation, which was too strict, and is removed.",
-      "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty were left out (2026-09-21): bostondynamics.com/atlas/ discloses only overall 4-hour battery life and does not state Wh capacity, charge time, joint torque in Nm, or any Atlas-specific SDK/API (the only SDK Boston Dynamics publishes is for Spot); delivery.timeline[].sector set to automotive on the Hyundai Metaplant event.",
+      "Demonstrated status: the Hyundai metaplant observation was of a pre-production electric Atlas prototype in fall 2025. Boston Dynamics introduced the product version in January 2026 and described fleet shipments as future. The prototype observation cannot establish customer receipt of this record’s product variant; an exact 4 January 2026 delivery date is unsupported.",
+      "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty remain omitted for lack of Atlas-specific figures. No exact first-customer-delivery event or automotive delivery sector is asserted.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for electric Atlas -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-27",
     "order_type": {
       "value": "quote",
       "status": "claimed",
@@ -1369,69 +1385,60 @@
     "price_history": [],
     "delivery": {
       "status": "shipped",
-      "timeline": [
+      "timeline": [],
+      "evidence": [
         {
-          "date": "2020-01-06",
-          "event": "first-customer-delivery",
-          "detail": "Ford Motor Company becomes Digit's first named commercial customer, testing it for last-mile delivery paired with autonomous vehicles.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "GXO reports Digit robots operational at its SPANX warehouse by the 27 June 2024 publication; the source does not establish the delivery day or count.",
           "source": {
-            "url": "https://en.wikipedia.org/wiki/Agility_Robotics",
-            "quote": "Ford Motor Company (2020) — First commercial customer; Purpose: explore last-mile delivery",
+            "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
+            "quote": "In the SPANX facility, Digit robots are assisting with repetitive tasks",
             "accessed": "2026-09-27",
             "media_type": "article",
-            "publisher_type": "independent",
+            "publisher_type": "official",
+            "variant": "Digit deployed at GXO SPANX",
+            "published": "2024-06-27",
             "review": {
-              "status": "insufficient",
+              "status": "supported",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+              "reason": "Customer primary source supports operational deployment by publication, not a 2024-01-01 handover."
             }
-          },
-          "sector": "automotive"
+          }
         },
         {
-          "date": "2024-01-01",
-          "event": "first-customer-delivery",
-          "detail": "GXO Logistics deploys Digit at its SPANX facility near Atlanta, Georgia, under a Robots-as-a-Service contract; GXO's own news page shows a photo of the unit and describes it as GXO's most advanced live humanoid deployment.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "Agility retrospectively identifies the customer-site generation at GXO as Digit 4. This links GXO’s operational report to this record; it does not establish an exact arrival date or independent verification.",
           "source": {
-            "url": "https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/",
-            "quote": "GXO has made the most progress with Digit, a humanoid robot that has been optimized to fit our needs and integrated with other automated technology in the warehouse.",
+            "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+            "quote": "Digit 4 has logged more than 65,000 hours of operational time and work across numerous customer sites in North America, including GXO",
             "accessed": "2026-09-27",
             "media_type": "article",
-            "publisher_type": "independent",
+            "publisher_type": "official",
+            "variant": "Digit 4",
+            "published": "2026-09-15",
             "review": {
-              "status": "insufficient",
+              "status": "supported",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+              "reason": "Manufacturer explicitly identifies GXO as a Digit 4 customer site; paired with GXO’s customer-primary deployment report. No exact handover date or count is proven."
             }
-          },
-          "sector": "logistics"
+          }
         },
         {
-          "date": "2023-10-18",
-          "event": "first-customer-delivery",
-          "detail": "Amazon begins testing Digit at its own robotics facility for tote recycling; Amazon's own newsroom names itself as the customer and publishes photos of the physical unit working alongside Amazon employees.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "Amazon announced it would begin testing Digit; this wording does not establish receipt on publication day.",
           "source": {
             "url": "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",
-            "quote": "Broadening our partnership with Agility Robotics, we will begin testing their bipedal robot, Digit, for use in our operations.",
+            "quote": "we will begin testing their bipedal robot, Digit, for use in our operations.",
             "accessed": "2026-09-27",
             "media_type": "article",
-            "publisher_type": "independent",
+            "publisher_type": "official",
+            "variant": "Digit (generation unspecified)",
             "review": {
               "status": "insufficient",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+              "reason": "Future-tense testing statement alone does not prove receipt or this record’s hardware generation."
             }
-          },
-          "sector": "logistics"
+          }
         }
       ]
     },
@@ -1500,13 +1507,13 @@
       }
     ],
     "notes": [
-      "This record covers the hardware generation of Digit that actually shipped to named customers (Ford 2020, Amazon 2023, GXO 2023-2024; Agility also claims a Toyota Motor Manufacturing Canada deployment per its own account, not independently sourced here).",
-      "No independently sourced height/weight/payload/battery specs for this specific generation were located during this build, so specs is intentionally empty rather than reusing the newer Digit 5 numbers. See agility-digit for the current (Digit 5) generation's claimed specs, which is a different, not-yet-shipped hardware generation.",
+      "This record covers Digit 4, the generation Agility retrospectively identifies at GXO and other production-floor customers after roughly three years of use by September 2026. Ford’s CES 2020 first-customer announcement concerns an earlier Digit generation and is not evidence for Digit 4. GXO’s operational deployment supports shipped status for this exact generation.",
+      "No directly sourced height, weight, payload, or battery specifications for Digit 4 were located during this build, so specs remain empty rather than borrowing Digit 5 figures. See agility-digit for the distinct Digit 5 generation and its claimed specifications.",
       "Digit is sold as Robots-as-a-Service, not a one-time purchase, so price_history is intentionally empty.",
-      "Shipped bar applied (2026-09-20): both GXO's own news page (gxo.com, real photo file Digit-image-min.jpg served from GXO's own domain) and Amazon's own newsroom (aboutamazon.com, two photos of the physical unit) name themselves as customers with images of the unit on their own channels, replacing the earlier Wikipedia-sourced GXO citation and adding Amazon as a second named, photographed 2023-2024 delivery of this same generation.",
-      "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): no independently sourced spec sheet for this specific (2020-2024) hardware generation was located, consistent with the existing note that height/weight/battery specs for this generation are intentionally left unsourced rather than reused from the newer Digit 5. delivery.timeline[].sector set to automotive (Ford) and logistics (GXO, Amazon)."
+      "Shipped status rests on GXO’s named operational Digit deployment, with Agility’s 15 September 2026 account explicitly identifying the GXO robots as Digit 4. Amazon’s 2023 future-tense testing announcement remains insufficient for customer receipt in that report; Ford 2020 is excluded from this generation. Exact delivery dates, unit counts, and independent variant verification remain unknown.",
+      "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type remain omitted for lack of sourced figures for this generation. No exact first-customer-delivery event or sector is asserted."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-27",
     "simulation": {
       "review": {
         "status": "not_confirmed",
@@ -1925,27 +1932,44 @@
             "accessed": "2026-09-20"
           },
           "sector": "automotive"
-        },
+        }
+      ],
+      "evidence": [
         {
-          "date": "2026-06-25",
-          "event": "first-customer-delivery",
-          "detail": "Delivered to BMW Group Plant Spartanburg (Hall 52), following on from Figure 02's 30,000-vehicle run at the same plant.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "BMW’s photo compilation captions identify Figure 03 at BMW Group Plant Spartanburg by 25 June 2026; the caption establishes reported physical presence, not sale or handover day.",
           "source": {
             "url": "https://www.press.bmwgroup.com/global/photo/compilation/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
             "quote": "Humanoid robot Figure 03 at BMW Group Plant Spartanburg.",
             "accessed": "2026-09-27",
             "media_type": "article",
             "publisher_type": "official",
+            "variant": "Figure 03",
+            "published": "2026-06-25",
             "review": {
-              "status": "insufficient",
+              "status": "supported",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+              "reason": "BMW’s dated caption supports the limited claim that Figure 03 was physically present at its Spartanburg plant. It does not establish an arrival or handover day, sale, or unit count."
             }
-          },
-          "sector": "automotive"
+          }
+        },
+        {
+          "detail": "Figure reports that Figure 03 arrived in Hall 52 at BMW Group Plant Spartanburg for a first logistics demonstration; arrival day and commercial terms are not stated.",
+          "source": {
+            "url": "https://www.figure.ai/news/f-03-at-bmw",
+            "quote": "Figure 03 - arrived in Hall 52",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Figure 03",
+            "published": "2026-06-30",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Manufacturer primary account supports arrival and demonstration at named customer, not exact handover day or sale."
+            }
+          }
         }
       ]
     },
@@ -1985,11 +2009,11 @@
     ],
     "notes": [
       "No manufacturer-published height/weight/DoF spec sheet for Figure 03 was located on figure.ai during this build (figure.ai/product returned HTTP 404); specs are left empty rather than filled from secondary blogs. Follow-up: check Figure's press kit or a dated product page once published.",
-      "Shipped bar applied (2026-09-20): BMW's own press portal (press.bmwgroup.com) published a 7-photo compilation on 2026-06-25 captioned \"Humanoid robot Figure 03 at BMW Group Plant Spartanburg\" -- a named customer (BMW Group Plant Spartanburg) with photographic evidence of the physical unit, published via the customer's own channel. Per this site's shipped rule, a named customer plus image via the customer's or an independent channel is sufficient; invoice/serial/unboxing/customs are alternatives, not an added requirement. Upgraded to shipped. (An earlier note in this file required invoice/serial/unboxing/customs in addition to the photo; that conjunctive reading was too strict and is removed.)",
-      "delivery.timeline[].sector set to automotive on all three events (2026-09-21): all are tied to the BMW Group Plant Spartanburg deployment.",
+      "Shipped bar: BMW’s own dated photo captions identify a Figure 03 at Plant Spartanburg, and Figure says the model arrived in Hall 52 for a logistics demonstration. This supports exact-model presence at a named customer, but no exact delivery day, sale, transfer of title, quantity, or scaled operation.",
+      "The announced and first-demo timeline events retain their automotive sector. No exact first-customer-delivery event is asserted.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Figure 03 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-27",
     "media": [
       {
         "type": "patent",
@@ -2634,24 +2658,60 @@
             "quote": "US $13.5K",
             "accessed": "2026-09-20"
           }
-        },
+        }
+      ],
+      "evidence": [
         {
-          "date": "2026-04-01",
-          "event": "first-customer-delivery",
-          "detail": "Delivered to Durham University's Department of Computer Science, which named its G1 Edu unit 'Alan' and published its own photo of the robot for research use.",
-          "quantity_min": null,
-          "quantity_max": null,
+          "detail": "Fraunhofer IPA says it received a Unitree G1 EDU-4 with Dex3-1 hands in May 2025; the source gives a month, not a day.",
           "source": {
-            "url": "https://www.durham.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
-            "quote": "Our Department of Computer Science has welcomed an exciting new arrival: Alan, a humanoid robot that will support a wide range of future research. ... Alan is a Unitree G1 Edu robot",
-            "accessed": "2026-09-20",
+            "url": "https://www.ipa.fraunhofer.de/en/press-media/press_releases/benchmark-for-humanoid-robots.html",
+            "quote": "The technical basis was the Unitree G1 EDU-4 with Dex3-1 3-finger hands delivered in May 2025 with firmware version 1.04.",
+            "accessed": "2026-09-27",
             "media_type": "article",
-            "publisher_type": "independent",
+            "publisher_type": "official",
+            "variant": "Unitree G1 EDU-4",
+            "published": "2026-05-27",
             "review": {
-              "status": "inaccessible",
+              "status": "supported",
               "method": "text",
               "checked": "2026-09-27",
-              "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+              "reason": "Receiving research institute identifies exact variant and delivery month, but not exact day."
+            }
+          }
+        },
+        {
+          "detail": "Fraunhofer IPA separately describes a G1 crate arriving at its campus and an unboxing event; this supports physical receipt but no exact day.",
+          "source": {
+            "url": "https://interaktiv.ipa.fraunhofer.de/embodied-ai/humanoide-roboter_statusquo-potenziale-forschungsfelder_teil1/",
+            "quote": "deren humanoider Roboter G1 nach mehreren Monaten Lieferzeit endlich im Automatisierungsbereich des Fraunhofer IPA angekommen war.",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Unitree G1",
+            "published": "2026-01-22",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Customer primary account supports campus receipt; publication is later than receipt."
+            }
+          }
+        },
+        {
+          "detail": "Durham University says its Computer Science department has welcomed Alan, a Unitree G1 Edu robot; publication on 1 April 2026 is not a delivery date.",
+          "source": {
+            "url": "https://dur.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
+            "quote": "Alan is a Unitree G1 Edu robot",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Unitree G1 Edu",
+            "published": "2026-04-01",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "University primary report and image support receipt of a G1 Edu, without arrival day."
             }
           }
         }
@@ -2754,11 +2814,11 @@
     "notes": [
       "Height/weight conflict: Unitree's current product page (accessed 2026-09-20) states \"1320x450x200mm\" and \"About 35kg\", while The Robot Report's May 2024 launch coverage stated 127 cm and 47 kg for the same base G1. Both are shown here as the current manufacturer figure; the discrepancy is not resolved.",
       "G1 is listed for direct purchase on Unitree's own storefront (checkout, no waitlist), which is strong claimed-level evidence of availability.",
-      "Shipped bar applied (2026-09-20): Durham University's own website (durham.ac.uk, published 1 April 2026) names the Department of Computer Science as the owner of a Unitree G1 Edu robot it calls 'Alan', with a photo of the unit ('Alan-robot-WEB.png') hosted on Durham's own site. This is a named customer with photographic evidence published on the customer's own channel, which satisfies this site's shipped rule without needing an invoice, serial number, unboxing, or customs record as an additional requirement. Upgraded from demonstrated to shipped; the earlier note here (requiring a serial number/invoice/customs record on top of a named buyer with a photo) applied too strict a reading and is removed.",
+      "Shipped bar: Fraunhofer IPA states it received a Unitree G1 EDU-4 in May 2025 and separately reports campus unboxing. Durham University reports receipt of its G1 Edu “Alan” by 1 April 2026. Both are named external recipients; neither source supports an exact day of first customer delivery. The previous Durham URL was inaccessible; the dur.ac.uk address is accessible.",
       "The 100m obstacle race result is attributed to G1 per Unitree's own social post naming the G1 for this event; the Shanghai Gaoyi Technology government press release (source above) confirms the time and team but does not itself name the robot model, since it covers both the G1 obstacle result and the H1 400m result from the same subsidiary team in one paragraph.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for G1 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-27",
     "results": [
       {
         "event": "world-humanoid-robot-games-2025",

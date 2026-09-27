@@ -81,7 +81,7 @@
   },
   "price_history": [],
   "delivery": {
-    "status": "shipped",
+    "status": "demonstrated",
     "timeline": [
       {
         "date": "2024-04-17",
@@ -94,27 +94,44 @@
           "quote": "This week we announced the retirement of our hydraulic Atlas and unveiled what comes next—a fully electric Atlas robot designed for real-world applications.",
           "accessed": "2026-09-20"
         }
-      },
+      }
+    ],
+    "evidence": [
       {
-        "date": "2026-01-04",
-        "event": "first-customer-delivery",
-        "detail": "Pilot at Hyundai Motor Group Metaplant America (Ellabell, GA): CBS 60 Minutes correspondent Bill Whitaker visited the plant in person and filmed Atlas sorting roof racks; an independent outlet, not Boston Dynamics or Hyundai, observed and photographed the physical unit on Hyundai's site.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "Boston Dynamics describes an electric Atlas prototype pilot at Hyundai’s Georgia metaplant in fall 2025. This does not establish deployment of the distinct 2026 product version recorded here.",
         "source": {
-          "url": "https://www.therobotreport.com/boston-dynamics-shows-atlas-humanoid-working-georgia-hyundai-plant/",
-          "quote": "Atlas practiced sorting roof racks without human help",
+          "url": "https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/",
+          "quote": "In the fall, we put Atlas to the test at the Hyundai metaplant in Georgia",
           "accessed": "2026-09-27",
           "media_type": "article",
-          "publisher_type": "independent",
+          "publisher_type": "official",
+          "variant": "pre-production electric Atlas prototype",
+          "published": "2026-01-05",
           "review": {
             "status": "insufficient",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+            "reason": "Prototype customer-site observation is not evidence that the later product-version Atlas reached Hyundai. Publication date is not a delivery day."
           }
-        },
-        "sector": "automotive"
+        }
+      },
+      {
+        "detail": "Boston Dynamics unveiled the product version of Atlas in January 2026 and described its customer fleet shipments as scheduled for later in 2026.",
+        "source": {
+          "url": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/",
+          "quote": "product version of Atlas",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "2026 Atlas product version",
+          "published": "2026-01-05",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The product-version announcement and future shipment schedule do not establish any product-version customer receipt."
+          }
+        }
       }
     ]
   },
@@ -197,11 +214,11 @@
     "Height/weight conflict: several outlets covering the April 2024 unveiling (aggregator sites, not manufacturer-sourced) reported roughly 1.5 m and 89 kg for electric Atlas, while the current official bostondynamics.com/atlas page (accessed 2026-09-20) states 1.9 m and 90 kg. Because the 1.5 m figure could not be traced to a manufacturer statement, only the current official page value is recorded here as claimed; the discrepancy is flagged rather than resolved.",
     "Payload: the official page lists 50 kg instant / 30 kg sustained lift capacity; only the instant figure is recorded in the single-value `payload_kg` field per schema.",
     "Full-scale Hyundai production deployment is still ramping (Boston Dynamics/Hyundai have said full introduction to production is targeted for 2028).",
-    "Shipped bar applied (2026-09-20): the January 2026 CBS 60 Minutes visit is an independent-party (CBS, not Boston Dynamics or Hyundai) on-site observation of a named customer (Hyundai Motor Group Metaplant America, Ellabell, GA) with video/photo evidence of the physical unit performing real work. Per this site's shipped rule (named customer + image via the customer's own or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement), this qualifies as shipped, with 'pilot' noted since 2028 is cited as the target for full production deployment. Upgraded from demonstrated to shipped; an earlier note here required invoice/serial evidence in addition to the observation, which was too strict, and is removed.",
-    "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty were left out (2026-09-21): bostondynamics.com/atlas/ discloses only overall 4-hour battery life and does not state Wh capacity, charge time, joint torque in Nm, or any Atlas-specific SDK/API (the only SDK Boston Dynamics publishes is for Spot); delivery.timeline[].sector set to automotive on the Hyundai Metaplant event.",
+    "Demonstrated status: the Hyundai metaplant observation was of a pre-production electric Atlas prototype in fall 2025. Boston Dynamics introduced the product version in January 2026 and described fleet shipments as future. The prototype observation cannot establish customer receipt of this record’s product variant; an exact 4 January 2026 delivery date is unsupported.",
+    "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty remain omitted for lack of Atlas-specific figures. No exact first-customer-delivery event or automotive delivery sector is asserted.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for electric Atlas -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21",
+  "updated": "2026-09-27",
   "order_type": {
     "value": "quote",
     "status": "claimed",

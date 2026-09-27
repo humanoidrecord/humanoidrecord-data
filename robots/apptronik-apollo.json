@@ -90,27 +90,26 @@
           "accessed": "2026-09-20"
         },
         "sector": "automotive"
-      },
+      }
+    ],
+    "evidence": [
       {
-        "date": "2025-03-18",
-        "event": "first-customer-delivery",
-        "detail": "Pilot at Mercedes-Benz Digital Factory Campus Berlin-Marienfelde: Mercedes-Benz's own press release confirms Apollo units are physically on site collecting production data, published with photos on Mercedes-Benz's own media channel.",
-        "quantity_min": null,
-        "quantity_max": null,
+        "detail": "Mercedes-Benz says Apollo units were present at its Digital Factory Campus and collecting data in a production environment by its 18 March 2025 publication. The source does not identify their hardware generation or establish an arrival day, transaction type, or quantity.",
         "source": {
-          "url": "https://media.mbusa.com/releases/release-cf381cd2fcff624ae37d3911631103dc-mercedes-benz-accelerates-the-transformation-of-its-production-network-by-integrating-ai-and-humanoid-robots-at-its-digital-factory-campus-in-berlin",
-          "quote": "Mercedes-Benz is testing the use of Apollo, a humanoid robot from Apptronik, in production.",
-          "accessed": "2026-09-20",
+          "url": "https://group.mercedes-benz.com/company/production/production-network/mbdfc-humanoid-robots.html",
+          "quote": "Apollo robots have been collecting data in a production environment",
+          "accessed": "2026-09-27",
           "media_type": "article",
           "publisher_type": "official",
+          "variant": "Apollo (hardware generation not specified by source)",
+          "published": "2025-03-18",
           "review": {
-            "status": "inaccessible",
+            "status": "supported",
             "method": "text",
             "checked": "2026-09-27",
-            "reason": "The source returned HTTP 404 during the review, so the claim could not be re-established."
+            "reason": "Mercedes-Benz customer-primary text supports physical Apollo pilot presence at its facility; it does not identify a hardware generation, exact arrival day, unit count, or sale."
           }
-        },
-        "sector": "automotive"
+        }
       }
     ]
   },
@@ -137,12 +136,12 @@
   ],
   "notes": [
     "Apptronik's own site (apptronik.com/apollo) returned no fetchable content during this research session; all specs here are sourced from The Robot Report's launch and Mercedes-Benz pilot coverage instead.",
-    "Shipped bar applied (2026-09-20): Mercedes-Benz's own press release (media.mbusa.com, 2025-03-18) names Mercedes-Benz Digital Factory Campus Berlin-Marienfelde as the site, confirms Apollo units are physically present and collecting production data, and is published with a photo gallery on Mercedes-Benz's own media channel. Per this site's shipped rule (named customer + image via customer's or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement), this qualifies as shipped with 'pilot' noted in the detail, since Mercedes-Benz itself frames it as testing. Upgraded from demonstrated to shipped; an earlier note here required an invoice/serial/unboxing/customs record in addition to the photo, which was too strict, and is removed.",
+    "Shipped bar: Mercedes-Benz’s 18 March 2025 report names Apollo at its Digital Factory Campus and describes on-site production-environment data collection on its own channel. This supports a named physical customer pilot of Apollo, while the hardware generation, exact handover date, sale, count, and scaled deployment remain unproven. The former media.mbusa.com URL returned 404; the cited Mercedes-Benz group page is accessible.",
     "The separate GXO/Apptronik relationship (gxo.com, Aug 2024) does not clear the same bar: GXO's own news page (https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/) lists Apollo alongside Digit and 'Reflex' but describes GXO as still evaluating Apollo in a lab setting before any live-facility deployment, unlike Digit which GXO describes as already live -- so Apollo-at-GXO is not treated as a second shipped delivery here; the Mercedes-Benz pilot is what carries this record to shipped.",
-    "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): apptronik.com/apollo returned HTTP 404 during this pass, and no other manufacturer page with a literal, directly quotable figure for these fields was located; Apollo is sold via direct enterprise pilots (Mercedes-Benz, GXO), not a public storefront. delivery.timeline[].sector set to automotive on the Mercedes-Benz events.",
+    "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type remain omitted for lack of sourced figures; Apollo was offered through enterprise pilots. The Mercedes-Benz first-demo event retains its automotive sector; no dated delivery event is asserted.",
     "locomotion left out (2026-09-21): this record covers the original 2023 Apollo generation, not the later modular Apollo 2 (which apptronik.com/apollo/apollo-2 explicitly offers as \"a bipedal configuration\" or \"a wheeled base\"). The Robot Report's 2023 unveil article and the Mercedes-Benz Digital Factory Campus Berlin-Marienfelde press release/MANUS glove coverage used for this record's shipped status do not state which mobility base was used on site. No literal quote pins the original Apollo or its Mercedes deployment to legs vs. wheels, so the field stays empty per the task's Apollo special case (use what the source says about the Mercedes deployment, else omit)."
   ],
-  "updated": "2026-09-21",
+  "updated": "2026-09-27",
   "media": [
     {
       "type": "patent",
