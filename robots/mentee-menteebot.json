@@ -171,5 +171,16 @@
     "In 2026 press reported Mobileye (whose CEO Amnon Shashua also founded Mentee Robotics) in talks to acquire Mentee Robotics; this is a corporate/ownership development, not a delivery or spec fact, and was not verified further for this record.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for MenteeBot -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.menteebot.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

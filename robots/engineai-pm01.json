@@ -177,5 +177,16 @@
     "No named-customer shipment evidence (invoice, serial number, unboxing, customs record) was found during this build; delivery.status therefore stays 'demonstrated' rather than 'shipped'.",
     "Shipped-bar research (2026-09-20): EngineAI's own claim is ~100 units delivered in five months including \"Shenzhen police patrol support\", which would be a strong named-customer claim if independently verified -- but this pass found no independent photo/video of a PM01 physically in Shenzhen police possession, nor any consumer unboxing video with a named buyer. Not upgraded to shipped."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/engineai-robotics/engineai_robotics_description/blob/1d2d7601f520f716863c32a83abe9c77b26ee06c/pm01_edu/urdf/serial_pm01_edu.urdf"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a PM01 Edu model was found; equivalence to this unsuffixed PM01 record was not established."
+    },
+    "artifacts": []
+  }
 }

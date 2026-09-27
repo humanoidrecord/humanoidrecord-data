@@ -147,7 +147,18 @@
       "The manufacturer's official datasheet PDF (linked from the CES 2026 page) was not accessible as text during this build and should be added as a follow-up source for dof/battery.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for 4NE-1 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://neura-robotics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "agibot-a2",
@@ -315,7 +326,18 @@
       "AgiBot's own product page (agibot.com/products/A2) does not list a price; no primary price source was found during this build, so price_history is left empty rather than using third-party reseller prices (e.g. Top3DShop, RoboZaps).",
       "Capabilities research (2026-09-20): AgiBot's own product page (agibot.com/products/A2, accessed 2026-09-20) lists a 'Dexterous Hand', 'Force/Torque Sensors' and 'L4-level autonomous mobility' among the A2's features, and separately advertises 'ActionGPT' for 'natural movement generation ... for task execution'. These are manufacturer capability claims, but the page gives no hand DOF number, no video/demo link, and no description of a specific demonstrated task (e.g. a bimanual grasp or a stair climb) that would satisfy this schema's 'demonstrated' bar or match a fixed capability id with confidence. Reseller/aggregator pages (Top3DShop, Americansatellite) repeat a 19-DOF dexterous hand figure and stair/curb navigation claims, but do not trace these to a primary AgiBot source. No capabilities entry was added for this build rather than recording an under-sourced claim; this should be revisited if a primary AgiBot demo video or spec page with DOF figures surfaces."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agibot.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "pndbotics-adam",
@@ -437,7 +459,46 @@
       "Battery runtime and walking speed were not found in the sources checked during this build and are omitted rather than guessed.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Adam -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf"
+        ],
+        "reason": "The official Adam SP repository path and URDF format marker were checked; the model was not executed. A separate simulator README did not establish that this URDF is the model it loads."
+      },
+      "artifacts": [
+        {
+          "id": "adam-sp-urdf",
+          "format": "urdf",
+          "variant": "Adam SP",
+          "provenance": "official",
+          "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf",
+          "revision": "38420a65d20219b095e9a78e22f0f9af7256c23f",
+          "license": {
+            "name": "Custom BSD-3-Clause-like license",
+            "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_license.txt"
+          },
+          "source": {
+            "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf",
+            "quote": "adam_sp/adam_sp.urdf",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "Adam SP",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        }
+      ]
+    }
   },
   {
     "slug": "hexagon-aeon",
@@ -613,7 +674,18 @@
       "A November 2025 Hexagon press item (via Microsoft Ignite 2025 coverage) states AEON 'completed more than 1,600 missions without interruption' during pilot testing — evidence of extended demonstrated operation at partner sites, but not tied to a single uncut video or named unit delivery, so delivery.status is kept at 'claimed' rather than 'demonstrated' or 'shipped'.",
       "walking_speed_kmh is converted from the manufacturer's stated 2.4 m/s (→ 8.64 km/h, rounded to 8.6 km/h)."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://robotics.hexagon.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "clone-alpha",
@@ -730,7 +802,18 @@
       "No independent or uncut demonstration video of Alpha walking or performing tasks live could be confirmed during this build; walking is reported by trade press as a 2027 target, and the 2025 preorder window is reported to have passed without shipments. Delivery status is therefore recorded as 'claimed' (announced + preorder claim), not 'demonstrated' or 'shipped'.",
       "Clone Robotics' operational presence is reported in Wrocław, Poland (R&D/manufacturing) while corporate/investor materials list a US entity; manufacturer.country is set to US pending a single authoritative filing, and this should be revisited if a primary source pins one jurisdiction."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://clonerobotics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "apptronik-apollo",
@@ -894,7 +977,18 @@
         "patent_number": "USD993,296 S",
         "credit": "USPTO / Apptronik, Inc."
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://apptronik.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "boston-dynamics-atlas-electric",
@@ -1127,7 +1221,18 @@
         "patent_number": "USD1,103,236 S",
         "credit": "USPTO / Boston Dynamics, Inc."
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://bostondynamics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "agility-digit-gen4",
@@ -1298,7 +1403,18 @@
       "Shipped bar applied (2026-09-20): both GXO's own news page (gxo.com, real photo file Digit-image-min.jpg served from GXO's own domain) and Amazon's own newsroom (aboutamazon.com, two photos of the physical unit) name themselves as customers with images of the unit on their own channels, replacing the earlier Wikipedia-sourced GXO citation and adding Amazon as a second named, photographed 2023-2024 delivery of this same generation.",
       "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): no independently sourced spec sheet for this specific (2020-2024) hardware generation was located, consistent with the existing note that height/weight/battery specs for this generation are intentionally left unsourced rather than reused from the newer Digit 5. delivery.timeline[].sector set to automotive (Ford) and logistics (GXO, Amazon)."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agilityrobotics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "agility-digit",
@@ -1432,7 +1548,18 @@
       "actuator_torque_nm, battery_wh, battery_swappable, sdk, warranty, and order_type were left out (2026-09-21): the Digit 5 announcement discloses only the 90-min/9-min runtime-and-charge figures and 'proprietary cycloidal actuator technology' without an Nm value, and directs buyers to a sales/quote page ('Deploy Digit') without a literal, quotable ordering-model or warranty statement.",
       "locomotion left out (2026-09-21): agilityrobotics.com/solutions/digit-5, the Sept 2026 Digit 5 press release, IEEE Spectrum's coverage, and Agility's general Digit page were all checked; each describes leg joints, reach, or general humanoid-robot history in a bipedal category, but none gave a literal sentence stating Digit 5 itself is bipedal/two-legged. Left out rather than reused from the gen4 record's Amazon-newsroom quote, which covers a different hardware generation."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agilityrobotics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "robonova-eva",
@@ -1592,7 +1719,18 @@
       "robonova.world is a JavaScript-rendered storefront that could not be scraped directly; all quotes were retrieved via the Kickstarter campaign page (through a text-extraction proxy after Kickstarter's own page blocked direct fetches), its FAQ, and third-party campaign trackers (PledgeBox, KickTraq) that mirror the campaign's own copy and funding figures.",
       "Manufacturer states mass production/shipping targeted for August 2026 (per Kickstarter FAQ) — not yet reached at time of writing, so no delivery timeline event was added for it per this site's rule against inventing unreached events."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://robonova.world"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "figure-03",
@@ -1733,7 +1871,18 @@
         "patent_number": "USD1,118,726 S",
         "credit": "USPTO / Figure AI Inc."
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.figure.ai"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "kepler-k2",
@@ -1951,6 +2100,17 @@
         "quote": "World's first commercially available planetary roller screw-driven humanoid robot",
         "accessed": "2026-09-21"
       }
+    },
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.gotokepler.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
     }
   },
   {
@@ -2132,7 +2292,18 @@
       "No price was found on a primary manufacturer or press source during this build; price_history is left empty.",
       "Shipped-bar research (2026-09-20): Galbot's own materials and The Robot Report describe G1 running autonomously in pharmacy retail settings (\"nearly 10 stores in Beijing\") and cite CATL and Bosch as investor/deployment partners, but per our own fetch of the Robot Report piece, no store or partner site is named specifically, and the CATL/Bosch language is about a joint venture and future collaboration, not a documented physical unit in either company's possession with photo plus invoice/serial/unboxing/customs. Not upgraded to shipped."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.galbot.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "unitree-g1",
@@ -2434,7 +2605,74 @@
           "accessed": "2026-09-21"
         }
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml"
+        ],
+        "reason": "Official repository paths and MJCF format markers were checked for two G1 artifacts; the models were not executed."
+      },
+      "artifacts": [
+        {
+          "id": "g1-23dof-mjcf",
+          "format": "mjcf",
+          "variant": "G1 23 DoF",
+          "provenance": "official",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+          "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+            "quote": "unitree_robots/g1/g1_23dof.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "G1 23 DoF",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        },
+        {
+          "id": "g1-29dof-mjcf",
+          "format": "mjcf",
+          "variant": "G1 29 DoF",
+          "provenance": "official",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml",
+          "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml",
+            "quote": "unitree_robots/g1/g1_29dof.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "G1 29 DoF",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        }
+      ]
+    }
   },
   {
     "slug": "fourier-gr-2",
@@ -2592,7 +2830,74 @@
       "Shipped-bar re-check (2026-09-20), applying this site's actual rule (named customer + image via the customer's own or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement): searched specifically for a named hospital, university, or lab publishing its own photo of a GR-1 unit (parallel to the Durham University / Unitree G1 case). None was found -- coverage of Fourier's healthcare/rehab use cases describes GR-1 as designed for hospital and care-home tasks and cites '2,000+ organizations and hospitals' served as a manufacturer-side aggregate claim, but no specific institution's own channel or independent report names itself as a GR-1 recipient with a photo of its unit. This is a genuine evidence gap, not an over-strict reading of the rule, so GR-1/GR-2 remains claimed, not shipped. No fourier-gr-1.json record exists in this dataset; if one is added later, this same gap applies to it.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for GR-2 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+          "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml"
+        ],
+        "reason": "Official repository paths and format markers were checked for two GR-2 artifacts; the models were not executed. Repository-level simulator wording did not establish artifact-specific compatibility."
+      },
+      "artifacts": [
+        {
+          "id": "gr2-v3-0-1-urdf",
+          "format": "urdf",
+          "variant": "GR-2 v3.0.1",
+          "provenance": "official",
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+          "revision": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+          "license": {
+            "name": "GPL-3.0",
+            "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+            "quote": "GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "GR-2 v3.0.1",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        },
+        {
+          "id": "gr2-v3-8-7-mjcf",
+          "format": "mjcf",
+          "variant": "GR-2 v3_8_7",
+          "provenance": "official",
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+          "revision": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+          "license": {
+            "name": "GPL-3.0",
+            "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+            "quote": "GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "GR-2 v3_8_7",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        }
+      ]
+    }
   },
   {
     "slug": "unitree-h1",
@@ -2839,7 +3144,68 @@
       "This record was created to attach the World Humanoid Robot Games 2025 results to a robot record; delivery status is 'demonstrated' rather than 'shipped' -- no named customer with a delivered H1 unit was found during this build.",
       "No sourced warranty terms or charge-time figure could be found for H1 specifically (searched unitree.com/h1/ and shop.unitree.com/products/unitree-h1); both fields left out rather than guessed."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md"
+        ],
+        "reason": "The official H1 repository path and MJCF format marker were checked; the model was not executed."
+      },
+      "artifacts": [
+        {
+          "id": "h1-mjcf",
+          "format": "mjcf",
+          "variant": "H1",
+          "provenance": "official",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+          "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+            "quote": "unitree_robots/h1/h1.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "H1",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": [
+            {
+              "simulator": "mujoco",
+              "level": "documented",
+              "version": null,
+              "notes": "The pinned README lists H1 in the simulator robot configuration.",
+              "source": {
+                "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md",
+                "quote": "h1",
+                "accessed": "2026-09-27",
+                "media_type": "repository",
+                "publisher_type": "official",
+                "variant": "H1",
+                "review": {
+                  "status": "supported",
+                  "method": "text",
+                  "checked": "2026-09-27",
+                  "reason": "The pinned official README explicitly names this robot configuration for MuJoCo; no model was executed."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "unitree-h2",
@@ -2994,7 +3360,68 @@
       "Capabilities research (2026-09-20): Unitree's own 'daily training video' releases show the H2 doing flying kicks, backflips, sandbag strikes and a boxing spar with a G1 (Interesting Engineering, 2025-12/2026-01 coverage), but none of these map cleanly onto this dataset's fixed capability ids (no 'acrobatics'/'combat' id exists, and a single flip or kick is not the sustained aerial-phase gait the 'run' id requires). None of the coverage states who or what controlled the robot during these clips -- Interesting Engineering instead describes teleoperation as a general 'transitional technology' for Unitree's humanoids without confirming it for this footage -- so per the schema's silence rule any such entry would have to be 'unknown' autonomy anyway. No hand DOF, tactile-skin, depth-camera or onboard-compute figure could be traced to a primary Unitree page (shop.unitree.com/products/unitree-h2 does not list them; unitree.com/h2 404s); secondary aggregator figures (e.g. Sharpa Wave 22-DOF hands cited by RoboZaps/Humanoid.guide) were not added for the same reason battery/payload were omitted above. capabilities left empty for this build.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for H2 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md"
+        ],
+        "reason": "The official H2 repository path and MJCF format marker were checked; the model was not executed."
+      },
+      "artifacts": [
+        {
+          "id": "h2-mjcf",
+          "format": "mjcf",
+          "variant": "H2",
+          "provenance": "official",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+          "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+            "quote": "unitree_robots/h2/h2_mujoco.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "H2",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": [
+            {
+              "simulator": "mujoco",
+              "level": "documented",
+              "version": null,
+              "notes": "The pinned README lists H2 in the simulator robot configuration.",
+              "source": {
+                "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md",
+                "quote": "h2",
+                "accessed": "2026-09-27",
+                "media_type": "repository",
+                "publisher_type": "official",
+                "variant": "H2",
+                "review": {
+                  "status": "supported",
+                  "method": "text",
+                  "checked": "2026-09-27",
+                  "reason": "The pinned official README explicitly names this robot configuration for MuJoCo; no model was executed."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "xpeng-iron",
@@ -3154,7 +3581,18 @@
       "hand_dof (22) and compute (3x Turing chips, 2,250 TOPS) added 2026-09-20 from CnEVPost's 2025-11-05 coverage of the next-generation Iron shown at 2025 AI Day, i.e. a newer generation than the 2024 height/weight/dof figures kept above; per the discrepancy note already on file, a separate report elsewhere put per-hand DOF at 21 (vs. CnEVPost's 22) and total body DOF at 76 for this same 2025 generation -- that conflict is unresolved and CnEVPost's figure is used as the traceable press source. No fixed capability id in data/capabilities.json cleanly matches the 2025 catwalk/runway demonstration (no 'run' aerial-phase gait shown, no dexterous-hand task performed on stage), so no capabilities entry was added for this build.",
       "locomotion left out (2026-09-21): cnevpost's launch coverage and Humanoids Daily's Shenzhen catwalk-debut article were checked; Humanoids Daily uses \"bipedal robots\" only in a general aside about fascia-layer damping, not as a direct statement about Iron itself, and no other fetched source gave a literal sentence naming Iron's own locomotion. Left out rather than inferred from the catwalk demo footage or the humanoid category."
     ],
-    "updated": "2026-09-22"
+    "updated": "2026-09-22",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.xpeng.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "mentee-menteebot",
@@ -3329,7 +3767,18 @@
       "In 2026 press reported Mobileye (whose CEO Amnon Shashua also founded Mentee Robotics) in talks to acquire Mentee Robotics; this is a corporate/ownership development, not a delivery or spec fact, and was not verified further for this record.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for MenteeBot -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.menteebot.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "1x-neo",
@@ -3540,7 +3989,18 @@
       "Height was not found stated on 1X's own current page during this build; third-party coverage estimates \"5-foot-6\" but that is not a manufacturer source, so height_cm is omitted here rather than sourced to a secondary outlet.",
       "charge_time_min, battery_swappable, actuator_torque_nm, and sdk were left out (2026-09-21): 1x.tech/order states only a charge rate (\"6min per hour runtime\", not a single full-charge minutes figure) and does not state swappability, joint torque, or any developer SDK/API."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.1x.tech"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "limx-dynamics-oli",
@@ -3722,7 +4182,18 @@
           "accessed": "2026-09-21"
         }
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.limxdynamics.com"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "tesla-optimus",
@@ -3968,7 +4439,18 @@
       "actuator_torque_nm, battery_wh, battery_swappable, charge_time_min, sdk, and warranty were left out of this update (2026-09-21): tesla.com/AI and Tesla's investor pages remained unreachable (HTTP 403), and secondary blogs repeating 2022 AI Day actuator numbers (20/110/180 Nm rotary reducers) could not be traced to a literal, directly quotable Tesla or Wikipedia passage during this pass.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Optimus -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.tesla.com/AI"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "persona-ai-gen1",
@@ -4101,7 +4583,18 @@
       "No public price has been found for Gen 1; Persona AI operates a robotics-as-a-service model without published unit pricing, so price_history is left empty.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Gen 1 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://persona.ai"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "sanctuary-ai-phoenix",
@@ -4272,7 +4765,18 @@
       "No battery runtime figure was found in the announcement source; the field is omitted rather than guessed.",
       "Phoenix is not sold as a commercial product with public pricing (deployed via partnerships), so price_history is empty rather than populated with a guess."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://sanctuary.ai"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "engineai-pm01",
@@ -4453,7 +4957,18 @@
       "No named-customer shipment evidence (invoice, serial number, unboxing, customs record) was found during this build; delivery.status therefore stays 'demonstrated' rather than 'shipped'.",
       "Shipped-bar research (2026-09-20): EngineAI's own claim is ~100 units delivered in five months including \"Shenzhen police patrol support\", which would be a strong named-customer claim if independently verified -- but this pass found no independent photo/video of a PM01 physically in Shenzhen police possession, nor any consumer unboxing video with a named buyer. Not upgraded to shipped."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/engineai-robotics/engineai_robotics_description/blob/1d2d7601f520f716863c32a83abe9c77b26ee06c/pm01_edu/urdf/serial_pm01_edu.urdf"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a PM01 Edu model was found; equivalence to this unsuffixed PM01 record was not established."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "unitree-r1",
@@ -4659,7 +5174,46 @@
       "Battery runtime, walking speed and payload were not found on a primary source during this build and are omitted rather than guessed; secondary aggregators (RoboZaps, Humanoid.guide) cite ~1 hour runtime but this was not independently confirmed against a manufacturer or press primary source.",
       "No named-customer delivery evidence was found; delivery.status stays 'claimed'."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml"
+        ],
+        "reason": "The official R1 repository path and MJCF format marker were checked; the model was not executed. The reviewed README did not list R1 in its simulator configurations, so compatibility remains unconfirmed."
+      },
+      "artifacts": [
+        {
+          "id": "r1-mjcf",
+          "format": "mjcf",
+          "variant": "R1",
+          "provenance": "official",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml",
+          "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml",
+            "quote": "unitree_robots/r1/R1_C++.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "R1",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        }
+      ]
+    }
   },
   {
     "slug": "booster-t1",
@@ -4864,7 +5418,124 @@
           "accessed": "2026-09-21"
         }
       }
-    ]
+    ],
+    "simulation": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+          "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+          "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+          "https://github.com/BoosterRobotics/booster_deploy/blob/7bb1462e2ac742eba5c01659b815e2e99fbe617f/booster_deploy/robots/t1.py"
+        ],
+        "reason": "Official repository paths and format markers were checked for three T1 artifacts; the models were not executed. MuJoCo compatibility is registered only for the T1 23 DoF MJCF artifact."
+      },
+      "artifacts": [
+        {
+          "id": "t1-23dof-urdf",
+          "format": "urdf",
+          "variant": "T1 23 DoF",
+          "provenance": "official",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+          "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+            "quote": "robots/T1/T1_23dof.urdf",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "T1 23 DoF",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        },
+        {
+          "id": "t1-23dof-mjcf",
+          "format": "mjcf",
+          "variant": "T1 23 DoF",
+          "provenance": "official",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+          "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+            "quote": "robots/T1/T1_23dof.xml",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "T1 23 DoF",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": [
+            {
+              "simulator": "mujoco",
+              "level": "documented",
+              "version": null,
+              "notes": "The pinned T1 23-DoF robot configuration points its MuJoCo model path to this exact asset variant.",
+              "source": {
+                "url": "https://github.com/BoosterRobotics/booster_deploy/blob/7bb1462e2ac742eba5c01659b815e2e99fbe617f/booster_deploy/robots/t1.py",
+                "quote": "mjcf_path=\"{BOOSTER_ASSETS_DIR}/robots/T1/T1_23dof.xml\"",
+                "accessed": "2026-09-27",
+                "media_type": "repository",
+                "publisher_type": "official",
+                "variant": "T1 23 DoF",
+                "review": {
+                  "status": "supported",
+                  "method": "text",
+                  "checked": "2026-09-27",
+                  "reason": "The pinned official robot configuration gives this exact artifact path as its MuJoCo model; no model was executed."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "t1-29dof-urdf",
+          "format": "urdf",
+          "variant": "T1 29 DoF with 7-DoF arms",
+          "provenance": "official",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+          "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+          "license": {
+            "name": "BSD-3-Clause",
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+          },
+          "source": {
+            "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+            "quote": "robots/T1/T1_29dof.urdf",
+            "accessed": "2026-09-27",
+            "media_type": "repository",
+            "publisher_type": "official",
+            "variant": "T1 29 DoF with 7-DoF arms",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Official repository path and format marker checked; model not executed."
+            }
+          },
+          "compatibility": []
+        }
+      ]
+    }
   },
   {
     "slug": "x-humanoid-tiangong-ultra",
@@ -4958,7 +5629,18 @@
       "A faster 2026 result (100 m in 8.64s at the 2nd World Humanoid Robot Games, August 2026) is documented in press coverage but is out of scope for this build's requested event set and is not recorded here.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Tiangong Ultra -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21"
+    "updated": "2026-09-21",
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/Open-X-Humanoid/TienKung_URDF/blob/4c2c061d72dcdab60d74e45d3efb17246a3b6f62/lite_urdf_publish/urdf/humanoid_publish.urdf"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a TienKung Lite model was found; it does not match the Tiangong Ultra record."
+      },
+      "artifacts": []
+    }
   },
   {
     "slug": "ubtech-walker-s2",
@@ -5095,6 +5777,17 @@
         "quote": "Please reach out for more request or become a partner!",
         "accessed": "2026-09-21"
       }
+    },
+    "simulation": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/UBTECH-Robot/WalkerS2-Model/blob/ca2ab983363d52a5e22ddf3a4d979ceaa675c374/Collected_WalkerS2/s2_v1.usd"
+        ],
+        "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a Walker S2 EDU model was found; equivalence to the commercial Walker S2 record was not established."
+      },
+      "artifacts": []
     }
   }
 ]

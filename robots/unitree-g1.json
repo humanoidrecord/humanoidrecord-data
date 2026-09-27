@@ -298,5 +298,72 @@
         "accessed": "2026-09-21"
       }
     }
-  ]
+  ],
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml"
+      ],
+      "reason": "Official repository paths and MJCF format markers were checked for two G1 artifacts; the models were not executed."
+    },
+    "artifacts": [
+      {
+        "id": "g1-23dof-mjcf",
+        "format": "mjcf",
+        "variant": "G1 23 DoF",
+        "provenance": "official",
+        "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+        "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_23dof.xml",
+          "quote": "unitree_robots/g1/g1_23dof.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "G1 23 DoF",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      },
+      {
+        "id": "g1-29dof-mjcf",
+        "format": "mjcf",
+        "variant": "G1 29 DoF",
+        "provenance": "official",
+        "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml",
+        "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/g1/g1_29dof.xml",
+          "quote": "unitree_robots/g1/g1_29dof.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "G1 29 DoF",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      }
+    ]
+  }
 }

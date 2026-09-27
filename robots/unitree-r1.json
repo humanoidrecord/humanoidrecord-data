@@ -202,5 +202,44 @@
     "Battery runtime, walking speed and payload were not found on a primary source during this build and are omitted rather than guessed; secondary aggregators (RoboZaps, Humanoid.guide) cite ~1 hour runtime but this was not independently confirmed against a manufacturer or press primary source.",
     "No named-customer delivery evidence was found; delivery.status stays 'claimed'."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml"
+      ],
+      "reason": "The official R1 repository path and MJCF format marker were checked; the model was not executed. The reviewed README did not list R1 in its simulator configurations, so compatibility remains unconfirmed."
+    },
+    "artifacts": [
+      {
+        "id": "r1-mjcf",
+        "format": "mjcf",
+        "variant": "R1",
+        "provenance": "official",
+        "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml",
+        "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/r1/R1_C++.xml",
+          "quote": "unitree_robots/r1/R1_C++.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "R1",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      }
+    ]
+  }
 }

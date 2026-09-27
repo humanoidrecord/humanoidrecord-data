@@ -118,5 +118,44 @@
     "Battery runtime and walking speed were not found in the sources checked during this build and are omitted rather than guessed.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Adam -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf"
+      ],
+      "reason": "The official Adam SP repository path and URDF format marker were checked; the model was not executed. A separate simulator README did not establish that this URDF is the model it loads."
+    },
+    "artifacts": [
+      {
+        "id": "adam-sp-urdf",
+        "format": "urdf",
+        "variant": "Adam SP",
+        "provenance": "official",
+        "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf",
+        "revision": "38420a65d20219b095e9a78e22f0f9af7256c23f",
+        "license": {
+          "name": "Custom BSD-3-Clause-like license",
+          "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_license.txt"
+        },
+        "source": {
+          "url": "https://github.com/pndbotics/pnd_models/blob/38420a65d20219b095e9a78e22f0f9af7256c23f/adam_sp/adam_sp.urdf",
+          "quote": "adam_sp/adam_sp.urdf",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "Adam SP",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      }
+    ]
+  }
 }

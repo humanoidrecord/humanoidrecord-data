@@ -172,5 +172,16 @@
     "A November 2025 Hexagon press item (via Microsoft Ignite 2025 coverage) states AEON 'completed more than 1,600 missions without interruption' during pilot testing — evidence of extended demonstrated operation at partner sites, but not tied to a single uncut video or named unit delivery, so delivery.status is kept at 'claimed' rather than 'demonstrated' or 'shipped'.",
     "walking_speed_kmh is converted from the manufacturer's stated 2.4 m/s (→ 8.64 km/h, rounded to 8.6 km/h)."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://robotics.hexagon.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

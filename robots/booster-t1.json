@@ -201,5 +201,122 @@
         "accessed": "2026-09-21"
       }
     }
-  ]
+  ],
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+        "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+        "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+        "https://github.com/BoosterRobotics/booster_deploy/blob/7bb1462e2ac742eba5c01659b815e2e99fbe617f/booster_deploy/robots/t1.py"
+      ],
+      "reason": "Official repository paths and format markers were checked for three T1 artifacts; the models were not executed. MuJoCo compatibility is registered only for the T1 23 DoF MJCF artifact."
+    },
+    "artifacts": [
+      {
+        "id": "t1-23dof-urdf",
+        "format": "urdf",
+        "variant": "T1 23 DoF",
+        "provenance": "official",
+        "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+        "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.urdf",
+          "quote": "robots/T1/T1_23dof.urdf",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "T1 23 DoF",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      },
+      {
+        "id": "t1-23dof-mjcf",
+        "format": "mjcf",
+        "variant": "T1 23 DoF",
+        "provenance": "official",
+        "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+        "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_23dof.xml",
+          "quote": "robots/T1/T1_23dof.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "T1 23 DoF",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": [
+          {
+            "simulator": "mujoco",
+            "level": "documented",
+            "version": null,
+            "notes": "The pinned T1 23-DoF robot configuration points its MuJoCo model path to this exact asset variant.",
+            "source": {
+              "url": "https://github.com/BoosterRobotics/booster_deploy/blob/7bb1462e2ac742eba5c01659b815e2e99fbe617f/booster_deploy/robots/t1.py",
+              "quote": "mjcf_path=\"{BOOSTER_ASSETS_DIR}/robots/T1/T1_23dof.xml\"",
+              "accessed": "2026-09-27",
+              "media_type": "repository",
+              "publisher_type": "official",
+              "variant": "T1 23 DoF",
+              "review": {
+                "status": "supported",
+                "method": "text",
+                "checked": "2026-09-27",
+                "reason": "The pinned official robot configuration gives this exact artifact path as its MuJoCo model; no model was executed."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "t1-29dof-urdf",
+        "format": "urdf",
+        "variant": "T1 29 DoF with 7-DoF arms",
+        "provenance": "official",
+        "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+        "revision": "12a97516f57469078707afb587a5f84c1cb110d1",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/BoosterRobotics/booster_assets/blob/12a97516f57469078707afb587a5f84c1cb110d1/robots/T1/T1_29dof.urdf",
+          "quote": "robots/T1/T1_29dof.urdf",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "T1 29 DoF with 7-DoF arms",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      }
+    ]
+  }
 }

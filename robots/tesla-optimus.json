@@ -242,5 +242,16 @@
     "actuator_torque_nm, battery_wh, battery_swappable, charge_time_min, sdk, and warranty were left out of this update (2026-09-21): tesla.com/AI and Tesla's investor pages remained unreachable (HTTP 403), and secondary blogs repeating 2022 AI Day actuator numbers (20/110/180 Nm rotary reducers) could not be traced to a literal, directly quotable Tesla or Wikipedia passage during this pass.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Optimus -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.tesla.com/AI"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

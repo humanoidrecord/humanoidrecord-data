@@ -243,5 +243,66 @@
     "This record was created to attach the World Humanoid Robot Games 2025 results to a robot record; delivery status is 'demonstrated' rather than 'shipped' -- no named customer with a delivered H1 unit was found during this build.",
     "No sourced warranty terms or charge-time figure could be found for H1 specifically (searched unitree.com/h1/ and shop.unitree.com/products/unitree-h1); both fields left out rather than guessed."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md"
+      ],
+      "reason": "The official H1 repository path and MJCF format marker were checked; the model was not executed."
+    },
+    "artifacts": [
+      {
+        "id": "h1-mjcf",
+        "format": "mjcf",
+        "variant": "H1",
+        "provenance": "official",
+        "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+        "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h1/h1.xml",
+          "quote": "unitree_robots/h1/h1.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "H1",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": [
+          {
+            "simulator": "mujoco",
+            "level": "documented",
+            "version": null,
+            "notes": "The pinned README lists H1 in the simulator robot configuration.",
+            "source": {
+              "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md",
+              "quote": "h1",
+              "accessed": "2026-09-27",
+              "media_type": "repository",
+              "publisher_type": "official",
+              "variant": "H1",
+              "review": {
+                "status": "supported",
+                "method": "text",
+                "checked": "2026-09-27",
+                "reason": "The pinned official README explicitly names this robot configuration for MuJoCo; no model was executed."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

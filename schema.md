@@ -50,6 +50,58 @@ itself (a repo, a docs page) — `source` is the evidence for the claim
 (open-source status, ROS support), which is often the same page but kept
 separate so a docs URL and an evidence quote don't have to collide.
 
+`simulation` is an optional top-level research record. Its review makes a
+targeted search explicit without turning “not found” into “unsupported”:
+
+```json
+{
+  "review": {
+    "status": "found|not_confirmed",
+    "checked": "YYYY-MM-DD",
+    "urls": ["https://..."],
+    "reason": "..."
+  },
+  "artifacts": [{
+    "id": "unique-id",
+    "format": "urdf|mjcf|usd|other",
+    "variant": "concrete robot variant",
+    "provenance": "official|community",
+    "url": "https://...",
+    "revision": "release, tag, commit, or dated revision; otherwise null",
+    "license": null,
+    "source": { "url": "https://...", "quote": "...", "accessed": "YYYY-MM-DD", "variant": "concrete robot variant" },
+    "compatibility": [{
+      "simulator": "mujoco|isaac_sim|gazebo|other",
+      "level": "documented|tested",
+      "version": null,
+      "notes": "optional context",
+      "source": { "url": "https://...", "quote": "...", "accessed": "YYYY-MM-DD", "variant": "concrete robot variant" }
+    }]
+  }]
+}
+```
+
+Both review states require a calendar-valid `checked`, at least one unique
+HTTP(S) URL that was searched, and a reason. `found` requires at least one
+artifact; `not_confirmed` requires an empty `artifacts` array and means only
+that the targeted search found no confirmed artefact. It never means the
+robot lacks simulation support.
+
+Artifact ids are unique within a robot. The `revision` key is required. Its
+value identifies the inspected release, tag, commit, or dated model revision,
+or is `null` when the public artifact has no confirmed revision. `license` is either
+`{ "name": "...", "url": "https://..." }` or `null` when no licence was
+confirmed; booleans are invalid. Each artifact and each simulator claim has
+its own source under the shared source contract. Its `source.variant` must
+equal the artifact's `variant`. Repository presence alone does not establish
+simulator compatibility.
+
+`documented` means the cited source explicitly documents compatibility.
+`tested` means the integration was executed and additionally requires a
+supported source review whose `reason` describes the test context, plus
+non-empty `notes`. Validation and builds never download or execute an
+external simulation artefact.
+
 `warranty` is an array, because coverage differs by region and reseller:
 `[{ months, region, source, status }]`. Record one entry per region/seller
 combination that has its own source; do not average or guess a global
@@ -437,6 +489,11 @@ of `cart | quote | waitlist | preorder | none`; each
 and `source`; `delivery.timeline[].sector`, when present, must be one of
 `automotive | logistics | manufacturing | research | consumer |
 healthcare | other`.
+
+For `simulation`: the research review, artifact cardinality, unique ids,
+formats, provenance, HTTP(S) URLs, revisions, licence shape, concrete variant
+matching, compatibility source, simulator and evidence level are validated.
+`tested` additionally requires a supported review and written test context.
 
 For `promises[]`: `id`, `claim`, `source_url`, `source_name` are required
 non-empty strings; `target` must parse under the deadline rule above

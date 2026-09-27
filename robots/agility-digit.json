@@ -130,5 +130,16 @@
     "actuator_torque_nm, battery_wh, battery_swappable, sdk, warranty, and order_type were left out (2026-09-21): the Digit 5 announcement discloses only the 90-min/9-min runtime-and-charge figures and 'proprietary cycloidal actuator technology' without an Nm value, and directs buyers to a sales/quote page ('Deploy Digit') without a literal, quotable ordering-model or warranty statement.",
     "locomotion left out (2026-09-21): agilityrobotics.com/solutions/digit-5, the Sept 2026 Digit 5 press release, IEEE Spectrum's coverage, and Agility's general Digit page were all checked; each describes leg joints, reach, or general humanoid-robot history in a bipedal category, but none gave a literal sentence stating Digit 5 itself is bipedal/two-legged. Left out rather than reused from the gen4 record's Amazon-newsroom quote, which covers a different hardware generation."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.agilityrobotics.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

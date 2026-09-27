@@ -177,5 +177,16 @@
     "No price was found on a primary manufacturer or press source during this build; price_history is left empty.",
     "Shipped-bar research (2026-09-20): Galbot's own materials and The Robot Report describe G1 running autonomously in pharmacy retail settings (\"nearly 10 stores in Beijing\") and cite CATL and Bosch as investor/deployment partners, but per our own fetch of the Robot Report piece, no store or partner site is named specifically, and the CATL/Bosch language is about a joint venture and future collaboration, not a documented physical unit in either company's possession with photo plus invoice/serial/unboxing/customs. Not upgraded to shipped."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.galbot.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

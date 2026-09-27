@@ -90,5 +90,16 @@
     "A faster 2026 result (100 m in 8.64s at the 2nd World Humanoid Robot Games, August 2026) is documented in press coverage but is out of scope for this build's requested event set and is not recorded here.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Tiangong Ultra -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/Open-X-Humanoid/TienKung_URDF/blob/4c2c061d72dcdab60d74e45d3efb17246a3b6f62/lite_urdf_publish/urdf/humanoid_publish.urdf"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a TienKung Lite model was found; it does not match the Tiangong Ultra record."
+    },
+    "artifacts": []
+  }
 }

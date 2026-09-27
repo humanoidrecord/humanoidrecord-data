@@ -167,5 +167,16 @@
     "No battery runtime figure was found in the announcement source; the field is omitted rather than guessed.",
     "Phoenix is not sold as a commercial product with public pricing (deployed via partnerships), so price_history is empty rather than populated with a guess."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://sanctuary.ai"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

@@ -207,5 +207,16 @@
     "Height was not found stated on 1X's own current page during this build; third-party coverage estimates \"5-foot-6\" but that is not a manufacturer source, so height_cm is omitted here rather than sourced to a secondary outlet.",
     "charge_time_min, battery_swappable, actuator_torque_nm, and sdk were left out (2026-09-21): 1x.tech/order states only a charge rate (\"6min per hour runtime\", not a single full-charge minutes figure) and does not state swappability, joint torque, or any developer SDK/API."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.1x.tech"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

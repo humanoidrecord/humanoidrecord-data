@@ -151,5 +151,66 @@
     "Capabilities research (2026-09-20): Unitree's own 'daily training video' releases show the H2 doing flying kicks, backflips, sandbag strikes and a boxing spar with a G1 (Interesting Engineering, 2025-12/2026-01 coverage), but none of these map cleanly onto this dataset's fixed capability ids (no 'acrobatics'/'combat' id exists, and a single flip or kick is not the sustained aerial-phase gait the 'run' id requires). None of the coverage states who or what controlled the robot during these clips -- Interesting Engineering instead describes teleoperation as a general 'transitional technology' for Unitree's humanoids without confirming it for this footage -- so per the schema's silence rule any such entry would have to be 'unknown' autonomy anyway. No hand DOF, tactile-skin, depth-camera or onboard-compute figure could be traced to a primary Unitree page (shop.unitree.com/products/unitree-h2 does not list them; unitree.com/h2 404s); secondary aggregator figures (e.g. Sharpa Wave 22-DOF hands cited by RoboZaps/Humanoid.guide) were not added for the same reason battery/payload were omitted above. capabilities left empty for this build.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for H2 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md"
+      ],
+      "reason": "The official H2 repository path and MJCF format marker were checked; the model was not executed."
+    },
+    "artifacts": [
+      {
+        "id": "h2-mjcf",
+        "format": "mjcf",
+        "variant": "H2",
+        "provenance": "official",
+        "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+        "revision": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+        "license": {
+          "name": "BSD-3-Clause",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/unitree_robots/h2/h2_mujoco.xml",
+          "quote": "unitree_robots/h2/h2_mujoco.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "H2",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": [
+          {
+            "simulator": "mujoco",
+            "level": "documented",
+            "version": null,
+            "notes": "The pinned README lists H2 in the simulator robot configuration.",
+            "source": {
+              "url": "https://github.com/unitreerobotics/unitree_mujoco/blob/1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d/readme.md",
+              "quote": "h2",
+              "accessed": "2026-09-27",
+              "media_type": "repository",
+              "publisher_type": "official",
+              "variant": "H2",
+              "review": {
+                "status": "supported",
+                "method": "text",
+                "checked": "2026-09-27",
+                "reason": "The pinned official README explicitly names this robot configuration for MuJoCo; no model was executed."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

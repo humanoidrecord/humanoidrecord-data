@@ -113,5 +113,16 @@
     "No independent or uncut demonstration video of Alpha walking or performing tasks live could be confirmed during this build; walking is reported by trade press as a 2027 target, and the 2025 preorder window is reported to have passed without shipments. Delivery status is therefore recorded as 'claimed' (announced + preorder claim), not 'demonstrated' or 'shipped'.",
     "Clone Robotics' operational presence is reported in Wrocław, Poland (R&D/manufacturing) while corporate/investor materials list a US entity; manufacturer.country is set to US pending a single authoritative filing, and this should be revisited if a primary source pins one jurisdiction."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://clonerobotics.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

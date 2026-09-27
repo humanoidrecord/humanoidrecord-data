@@ -154,5 +154,72 @@
     "Shipped-bar re-check (2026-09-20), applying this site's actual rule (named customer + image via the customer's own or an independent channel; invoice/serial/unboxing/customs are alternatives, not an added requirement): searched specifically for a named hospital, university, or lab publishing its own photo of a GR-1 unit (parallel to the Durham University / Unitree G1 case). None was found -- coverage of Fourier's healthcare/rehab use cases describes GR-1 as designed for hospital and care-home tasks and cites '2,000+ organizations and hospitals' served as a manufacturer-side aggregate claim, but no specific institution's own channel or independent report names itself as a GR-1 recipient with a photo of its unit. This is a genuine evidence gap, not an over-strict reading of the rule, so GR-1/GR-2 remains claimed, not shipped. No fourier-gr-1.json record exists in this dataset; if one is added later, this same gap applies to it.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for GR-2 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+        "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml"
+      ],
+      "reason": "Official repository paths and format markers were checked for two GR-2 artifacts; the models were not executed. Repository-level simulator wording did not establish artifact-specific compatibility."
+    },
+    "artifacts": [
+      {
+        "id": "gr2-v3-0-1-urdf",
+        "format": "urdf",
+        "variant": "GR-2 v3.0.1",
+        "provenance": "official",
+        "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+        "revision": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+        "license": {
+          "name": "GPL-3.0",
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+          "quote": "GRX/GR2/GR2v3.0.1/urdf/GR2v3.0.1.urdf",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "GR-2 v3.0.1",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      },
+      {
+        "id": "gr2-v3-8-7-mjcf",
+        "format": "mjcf",
+        "variant": "GR-2 v3_8_7",
+        "provenance": "official",
+        "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+        "revision": "7d96c758f048fe1bf92b3258864d94771ae0c093",
+        "license": {
+          "name": "GPL-3.0",
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/LICENSE"
+        },
+        "source": {
+          "url": "https://github.com/FFTAI/Wiki-GRx-URDF/blob/7d96c758f048fe1bf92b3258864d94771ae0c093/GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+          "quote": "GRX/GR2/gr2v3_8_7/mjcf/gr2v3_8_7.xml",
+          "accessed": "2026-09-27",
+          "media_type": "repository",
+          "publisher_type": "official",
+          "variant": "GR-2 v3_8_7",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Official repository path and format marker checked; model not executed."
+          }
+        },
+        "compatibility": []
+      }
+    ]
+  }
 }

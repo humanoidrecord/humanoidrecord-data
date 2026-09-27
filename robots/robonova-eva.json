@@ -156,5 +156,16 @@
     "robonova.world is a JavaScript-rendered storefront that could not be scraped directly; all quotes were retrieved via the Kickstarter campaign page (through a text-extraction proxy after Kickstarter's own page blocked direct fetches), its FAQ, and third-party campaign trackers (PledgeBox, KickTraq) that mirror the campaign's own copy and funding figures.",
     "Manufacturer states mass production/shipping targeted for August 2026 (per Kickstarter FAQ) — not yet reached at time of writing, so no delivery timeline event was added for it per this site's rule against inventing unreached events."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://robonova.world"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

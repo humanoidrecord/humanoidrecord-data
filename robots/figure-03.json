@@ -137,5 +137,16 @@
       "patent_number": "USD1,118,726 S",
       "credit": "USPTO / Figure AI Inc."
     }
-  ]
+  ],
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.figure.ai"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

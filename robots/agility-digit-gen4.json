@@ -167,5 +167,16 @@
     "Shipped bar applied (2026-09-20): both GXO's own news page (gxo.com, real photo file Digit-image-min.jpg served from GXO's own domain) and Amazon's own newsroom (aboutamazon.com, two photos of the physical unit) name themselves as customers with images of the unit on their own channels, replacing the earlier Wikipedia-sourced GXO citation and adding Amazon as a second named, photographed 2023-2024 delivery of this same generation.",
     "actuator_torque_nm, battery_wh, charge_time_min, sdk, warranty, and order_type were left out (2026-09-21): no independently sourced spec sheet for this specific (2020-2024) hardware generation was located, consistent with the existing note that height/weight/battery specs for this generation are intentionally left unsourced rather than reused from the newer Digit 5. delivery.timeline[].sector set to automotive (Ford) and logistics (GXO, Amazon)."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.agilityrobotics.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

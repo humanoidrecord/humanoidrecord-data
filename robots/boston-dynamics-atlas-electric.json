@@ -229,5 +229,16 @@
       "patent_number": "USD1,103,236 S",
       "credit": "USPTO / Boston Dynamics, Inc."
     }
-  ]
+  ],
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://bostondynamics.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

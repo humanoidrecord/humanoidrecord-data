@@ -160,5 +160,16 @@
       "patent_number": "USD993,296 S",
       "credit": "USPTO / Apptronik, Inc."
     }
-  ]
+  ],
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://apptronik.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }

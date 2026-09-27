@@ -133,5 +133,16 @@
       "quote": "Please reach out for more request or become a partner!",
       "accessed": "2026-09-21"
     }
+  },
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/UBTECH-Robot/WalkerS2-Model/blob/ca2ab983363d52a5e22ddf3a4d979ceaa675c374/Collected_WalkerS2/s2_v1.usd"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a Walker S2 EDU model was found; equivalence to the commercial Walker S2 record was not established."
+    },
+    "artifacts": []
   }
 }

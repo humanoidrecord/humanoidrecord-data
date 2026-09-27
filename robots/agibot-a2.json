@@ -164,5 +164,16 @@
     "AgiBot's own product page (agibot.com/products/A2) does not list a price; no primary price source was found during this build, so price_history is left empty rather than using third-party reseller prices (e.g. Top3DShop, RoboZaps).",
     "Capabilities research (2026-09-20): AgiBot's own product page (agibot.com/products/A2, accessed 2026-09-20) lists a 'Dexterous Hand', 'Force/Torque Sensors' and 'L4-level autonomous mobility' among the A2's features, and separately advertises 'ActionGPT' for 'natural movement generation ... for task execution'. These are manufacturer capability claims, but the page gives no hand DOF number, no video/demo link, and no description of a specific demonstrated task (e.g. a bimanual grasp or a stair climb) that would satisfy this schema's 'demonstrated' bar or match a fixed capability id with confidence. Reseller/aggregator pages (Top3DShop, Americansatellite) repeat a 19-DOF dexterous hand figure and stair/curb navigation claims, but do not trace these to a primary AgiBot source. No capabilities entry was added for this build rather than recording an under-sourced claim; this should be revisited if a primary AgiBot demo video or spec page with DOF figures surfaces."
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "simulation": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.agibot.com"
+      ],
+      "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
+    },
+    "artifacts": []
+  }
 }
