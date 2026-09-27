@@ -29,6 +29,7 @@ See `schema.md` for the full field-by-field rules.
   with its license and source in `robots/<slug>.json`. Never evidence for
   a claim — see `schema.md`.
 - `schema.md` — field definitions and evidence rules.
+- `schema-version.json` — machine-readable schema version and change list.
 - `watch.json` — sources watched for updates per manufacturer.
 - `LICENSE` — CC BY 4.0.
 
@@ -42,7 +43,7 @@ merged.
 ## Citing this data
 
 ```
-Data from humanoidrecord.com, CC BY 4.0. Retrieved 2026-09-23 from
+Data from humanoidrecord.com, CC BY 4.0. Retrieved 2026-09-27 from
 https://github.com/humanoidrecord/humanoidrecord-data
 ```
 

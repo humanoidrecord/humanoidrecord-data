@@ -40,7 +40,15 @@
       "source": {
         "url": "https://bostondynamics.com/atlas/",
         "quote": "56",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -96,7 +104,15 @@
         "source": {
           "url": "https://www.therobotreport.com/boston-dynamics-shows-atlas-humanoid-working-georgia-hyundai-plant/",
           "quote": "Atlas practiced sorting roof racks without human help",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "independent",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+          }
         },
         "sector": "automotive"
       }
@@ -110,7 +126,15 @@
       "source": {
         "url": "https://spectrum.ieee.org/boston-dynamics-new-atlas",
         "quote": "There are no prescribed or teleoperated movements; all motions are generated autonomously online.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Atlas (Electric) were not fully verified."
+        }
       },
       "note": "Boston Dynamics' Scott Kuindersma describing an engine-cover handling clip; the only place this dataset found an explicit no-teleop statement rather than an unspecified highlight reel."
     },
@@ -121,9 +145,52 @@
       "source": {
         "url": "https://www.therobotreport.com/boston-dynamics-shows-atlas-humanoid-working-georgia-hyundai-plant/",
         "quote": "Atlas practiced sorting roof racks without human help",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Atlas (Electric) were not fully verified."
+        }
       },
       "note": "Independent on-site observation (CBS 60 Minutes correspondent, reported via The Robot Report) at the Hyundai Metaplant, not a manufacturer clip."
+    }
+  ],
+  "promises": [
+    {
+      "id": "boston-dynamics-atlas-hyundai-deployment-2028",
+      "claim": "Atlas deployment starts at Hyundai Metaplant America",
+      "target": "2028",
+      "made_on": "2026-05-20",
+      "quote": "Atlas will first be deployed at Hyundai Motor Group Metaplant America in Georgia in 2028, with Kia's Georgia plant following in 2029",
+      "source_url": "https://www.koreaherald.com/article/10741955",
+      "source_name": "The Korea Herald",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "boston-dynamics-atlas-25000-units",
+      "claim": "Deploy more than 25,000 Atlas robots across Hyundai/Kia plants",
+      "target": "2028",
+      "made_on": "2026-05-20",
+      "quote": "deploy more than 25,000 Atlas humanoid robots developed by its US robotics subsidiary Boston Dynamics",
+      "source_url": "https://www.koreaherald.com/article/10741955",
+      "source_name": "The Korea Herald",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "boston-dynamics-atlas-30000-annual-2028",
+      "claim": "Hyundai to produce 30,000 robots per year",
+      "target": "2028",
+      "made_on": "2026-05-20",
+      "quote": "30,000 robots Hyundai aims to produce each year by 2028",
+      "source_url": "https://www.koreaherald.com/article/10741955",
+      "source_name": "The Korea Herald",
+      "accessed": "2026-09-27",
+      "status": "open"
     }
   ],
   "notes": [

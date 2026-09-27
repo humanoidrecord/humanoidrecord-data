@@ -106,6 +106,19 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "neura-4ne1-gen35-availability-2026",
+      "claim": "4NE-1 Gen 3.5 available",
+      "target": "2026",
+      "made_on": "2026-01-05",
+      "quote": "4NE1 Gen 3.5 is expected to be available end of 2026.",
+      "source_url": "https://neura-robotics.com/product/4ne1-reservation/",
+      "source_name": "NEURA Robotics, 4NE-1 reservation page",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "capabilities": [
     {
       "id": "pick-and-place",
@@ -114,7 +127,15 @@
       "source": {
         "url": "https://newatlas.com/robotics/neura-4ne1-humanoid-robot/",
         "quote": "performing a raft of mediocre or tiresome domestic chores – from doing the ironing to food prep",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "NEURA's own demo reel, alternating simulation and real-world footage. New Atlas: \"It's not clear whether teleoperation was involved here, but the video does mention training the system in a simulated environment.\" No explicit no-teleop statement, so autonomy is recorded as unknown rather than autonomous."
     }

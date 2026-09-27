@@ -40,7 +40,15 @@
       "source": {
         "url": "https://newatlas.com/ai-humanoids/pndbotics-adam-humanoid-robot/",
         "quote": "41 joints driven by PSA quasi-direct-drive actuators",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "payload_kg": {
@@ -58,7 +66,15 @@
       "source": {
         "url": "https://newatlas.com/ai-humanoids/pndbotics-adam-humanoid-robot/",
         "quote": "340 Nm (250 lb.ft) of joint torque",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     }
   },

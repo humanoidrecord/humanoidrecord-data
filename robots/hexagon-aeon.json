@@ -40,7 +40,15 @@
       "source": {
         "url": "https://robotics.hexagon.com/product",
         "quote": "34",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -145,6 +153,19 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "hexagon-aeon-schaeffler-1000-2032",
+      "claim": "Deploy at least 1,000 AEON humanoids across Schaeffler's global production system",
+      "target": "2032",
+      "made_on": "2026-04-22",
+      "quote": "at least 1,000 Hexagon Robotics humanoids across its global production system by 2032",
+      "source_url": "https://robotics.hexagon.com/hexagon-robotics-and-schaeffler-deploy-a-fleet-of-aeon-humanoids/",
+      "source_name": "Hexagon Robotics",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "notes": [
     "Capabilities research (2026-09-20): secondary coverage (A3/automate.org, Mike Kalil) describes AEON generalizing from roughly 20 teleoperated demonstrations to autonomous operation via imitation learning, and lists pick-and-place, machine tending and inspection as target tasks. Both automate.org and robotics.hexagon.com returned HTTP 403 when fetched directly during this build, so no literal quote could be verified against the primary text within this session's timebox. The capabilities block is left empty rather than sourced to an unverified paraphrase; this should be revisited once those pages (or an accessible mirror) can be fetched.",
     "AEON is not sold publicly; Hexagon states it is deployed only through enterprise pilot partnerships (named: Schaeffler, Pilatus; BMW is cited by several secondary aggregator sites but was not confirmed on Hexagon's own pages during this build). No price has been published, so price_history is left empty rather than using the speculative ~$20,000 figure some aggregators cite.",

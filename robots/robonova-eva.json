@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.kickstarter.com/projects/robonovaworld/evai-not-just-a-robot-a-bionic-embodied-ai-companion-app",
         "quote": "FPC electronic skin responds to pressure and location; full-body touch detection (face, arms, fingers, torso, neck, legs)",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-20",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+        }
       }
     }
   },
@@ -92,7 +100,15 @@
       "source": {
         "url": "https://www.kickstarter.com/projects/robonovaworld/evai-not-just-a-robot-a-bionic-embodied-ai-companion-app/faqs",
         "quote": "it is equipped with blinking, eye and mouth linkage movements, movable pupils, and an openable and closable mouth",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-20",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+        }
       },
       "note": "Mechanical face (no screen). Campaign copy only; no independently verified demonstration video found, and the campaign does not state whether expressions are AI-driven or pre-scripted."
     },
@@ -103,7 +119,15 @@
       "source": {
         "url": "https://r.jina.ai/https://www.kickstarter.com/projects/robonovaworld/evai-not-just-a-robot-a-bionic-embodied-ai-companion-app",
         "quote": "Eva.i detects the direction of your voice and naturally turns its head toward you",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-20",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+        }
       },
       "note": "Campaign claim of sound localization plus an on-device conversational AI; no independent demonstration found."
     },
@@ -114,7 +138,15 @@
       "source": {
         "url": "https://www.kickstarter.com/projects/robonovaworld/evai-not-just-a-robot-a-bionic-embodied-ai-companion-app",
         "quote": "Touch-sensitive zones allow commands and switch from \"Companion Mode\" to \"Work Mode\" in under 3 seconds",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-20",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+        }
       },
       "note": "Claimed behavior change from touch input; no independent demonstration found."
     }

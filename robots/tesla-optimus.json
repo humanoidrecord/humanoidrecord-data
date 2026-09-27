@@ -49,7 +49,15 @@
       "source": {
         "url": "https://www.teslarati.com/tesla-optimus-hands-22-degrees-of-freedom-upgrade-2024/",
         "quote": "The new Optimus hand later this year will have 22 DoF",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     }
   },
@@ -96,6 +104,53 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "tesla-optimus-v1-production-2023",
+      "claim": "Optimus version 1 in production",
+      "target": "2023",
+      "made_on": "2022-04-08",
+      "quote": "We have a shot of being in production for version one of Optimus hopefully next year",
+      "source_url": "https://www.cnbc.com/2022/04/08/elon-musk-says-tesla-is-aiming-to-start-production-on-optimus-next-year.html",
+      "source_name": "CNBC",
+      "accessed": "2026-09-27",
+      "status": "missed",
+      "revised_to": "tesla-optimus-low-production-2025"
+    },
+    {
+      "id": "tesla-optimus-low-production-2025",
+      "claim": "Low production of Optimus for Tesla internal use",
+      "target": "2025",
+      "made_on": "2024-07-23",
+      "quote": "Tesla will have genuinely useful humanoid robots in low production for Tesla internal use next year",
+      "source_url": "https://techcrunch.com/2024/07/23/elon-musk-sets-2026-optimus-sale-date-heres-where-other-humanoid-robots-stand/",
+      "source_name": "TechCrunch",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "tesla-optimus-high-production-2026",
+      "claim": "High production of Optimus for other companies",
+      "target": "2026",
+      "made_on": "2024-07-23",
+      "quote": "hopefully, high production for other companies in 2026",
+      "source_url": "https://techcrunch.com/2024/07/23/elon-musk-sets-2026-optimus-sale-date-heres-where-other-humanoid-robots-stand/",
+      "source_name": "TechCrunch",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "tesla-optimus-significant-numbers-2027",
+      "claim": "Optimus ramp to significant production numbers",
+      "target": "2027",
+      "made_on": "2026-04-22",
+      "quote": "we're preparing Fremont for start of production later this year...we'll ramp up to significant numbers next year",
+      "source_url": "https://evwire.com/p/tesla-tsla-q1-2026-earnings-call-full-transcript",
+      "source_name": "Tesla Q1 2026 earnings call transcript",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "order_type": {
     "value": "none",
     "status": "claimed",
@@ -113,7 +168,15 @@
       "source": {
         "url": "https://fortune.com/2024/10/13/elon-musk-tesla-optimus-robot-tele-operated-robotaxi",
         "quote": "Today I'm assisted by a human. I'm not yet fully autonomous",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "At Tesla's 'We, Robot' event (2024-10-10), one of the Optimus units present told a guest it was human-assisted; independently observed and reported by multiple attendees/press (Fortune, Bloomberg, Cybernews), not a Tesla press claim."
     },
@@ -124,7 +187,15 @@
       "source": {
         "url": "https://fortune.com/2024/10/13/elon-musk-tesla-optimus-robot-tele-operated-robotaxi",
         "quote": "Totally worthy to celebrate low latency remote control, but totally dishonest to demo these as autonomous robots—call it the parlor trick it is.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "Optimus units poured drinks and interacted with guests at the We, Robot event; Lux Capital cofounder Josh Wolfe's remark confirms remote control was used for at least some units, but Tesla has not disclosed which specific actions were teleoperated vs. scripted/autonomous, so this pick-and-place-style interaction is recorded as unknown rather than autonomous or teleoperated by default."
     }

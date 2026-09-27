@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.therobotreport.com/unitree-designs-r1-humanoid-robot-to-be-agile-and-affordable/",
         "quote": "features 26 degrees of freedom across its legs, waist, arms, and head",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_wh": {
@@ -135,7 +143,15 @@
       "source": {
         "url": "https://www.yankodesign.com/2025/07/28/unitrees-5900-r1-humanoid-robot-can-run-do-cartwheels-and-perform-handstands/",
         "quote": "Unitree R1 humanoid robot is capable of walking, running, cartwheeling, doing kung-fu, falling on its own will, and getting up like nothing ever happened.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "This launch-video coverage does not itself state who controlled the robot. Autonomy is set to 'teleoperated' on the strength of The Robot Report's separate, explicit statement that 'Unitree's R1 is remote-controlled' and that 'Autonomy is achievable but requires secondary development' (https://www.therobotreport.com/unitree-designs-r1-humanoid-robot-to-be-agile-and-affordable/, accessed 2026-09-20) -- a general characterization of the shipped R1 platform, not a clip-specific statement about this particular run."
     },
@@ -146,7 +162,15 @@
       "source": {
         "url": "https://www.yankodesign.com/2025/07/28/unitrees-5900-r1-humanoid-robot-can-run-do-cartwheels-and-perform-handstands/",
         "quote": "falling on its own will, and getting up like nothing ever happened",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "Same launch-video coverage as the 'run' entry above; autonomy is likewise inferred from The Robot Report's general 'remote-controlled' statement about the R1 platform rather than a clip-specific control statement."
     }

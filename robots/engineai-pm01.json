@@ -40,7 +40,15 @@
       "source": {
         "url": "https://en.engineai.com.cn/",
         "quote": "24-DOF",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "walking_speed_kmh": {
@@ -67,7 +75,15 @@
       "source": {
         "url": "https://en.engineai.com.cn/product-pm01.html",
         "quote": "Max Torque [1] 164 N·m",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       },
       "note": "Manufacturer's own EDU-edition spec table lists 164N.m as the joint 'Max Torque'; a separate marketing line elsewhere on the same page cites 'a peak torque of 130 N·m' for the actuator module -- both figures are the manufacturer's own, the 164N.m table value is used as the more specific per-joint spec."
     },

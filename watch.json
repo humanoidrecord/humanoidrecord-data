@@ -6,7 +6,9 @@
     "https://www.agibot.com/article/223.html"
   ],
   "agility-robotics": [
-    "https://www.agilityrobotics.com/latest-press"
+    "https://www.agilityrobotics.com/latest-press",
+    "https://www.agilityrobotics.com/press",
+    "https://www.agilityrobotics.com/press-releases"
   ],
   "apptronik": [
     "https://apptronik.com/company/in-the-news"
@@ -15,39 +17,65 @@
     "https://www.booster.tech/news"
   ],
   "boston-dynamics": [
-    "https://bostondynamics.com/news/"
+    "https://bostondynamics.com/news/",
+    "https://bostondynamics.com/blog"
   ],
-  "clone-robotics": [],
+  "clone-robotics": [
+    "https://clonerobotics.com/news",
+    "https://clonerobotics.com/press",
+    "https://clonerobotics.com/blog"
+  ],
   "engineai": [
     "https://en.engineai.com.cn/about-news.html"
   ],
   "figure-ai": [
     "https://www.figure.ai/news"
   ],
-  "fourier": [],
+  "fourier": [
+    "https://www.fftai.com/news",
+    "https://www.fftai.com/press",
+    "https://www.fftai.com/blog"
+  ],
   "galbot": [
-    "https://www.galbot.com/news"
+    "https://www.galbot.com/news",
+    "https://www.galbot.com/press",
+    "https://www.galbot.com/blog"
   ],
   "hexagon": [
     "https://robotics.hexagon.com/news/"
   ],
-  "kepler": [],
+  "kepler": [
+    "https://www.gotokepler.com/news",
+    "https://www.gotokepler.com/press",
+    "https://www.gotokepler.com/blog"
+  ],
   "limx-dynamics": [
     "https://limxdynamics.com/zh/news"
   ],
   "mentee-robotics": [
-    "https://www.menteebot.com/news/"
+    "https://www.menteebot.com/news/",
+    "https://www.menteebot.com/blog/"
   ],
-  "neura-robotics": [],
+  "neura-robotics": [
+    "https://neura-robotics.com/news/",
+    "https://neura-robotics.com/press/",
+    "https://neura-robotics.com/blogs/"
+  ],
   "persona-ai": [
     "https://persona.ai/news-articles/"
   ],
-  "pndbotics": [],
+  "pndbotics": [
+    "https://www.pndbotics.com/news",
+    "https://www.pndbotics.com/press",
+    "https://www.pndbotics.com/blog"
+  ],
   "robonova": [
-    "https://robonova.world/"
+    "https://robonova.world/",
+    "https://robonova.world/shop/blog"
   ],
   "sanctuary-ai": [
-    "https://sanctuary.ai/news/"
+    "https://sanctuary.ai/news/",
+    "https://sanctuary.ai/press/"
   ],
   "tesla": [],
   "ubtech": [

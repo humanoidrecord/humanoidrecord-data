@@ -31,7 +31,16 @@
       "source": {
         "url": "https://www.limxdynamics.com/en/news/BK000043",
         "quote": "31 active degrees of freedom",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "variant": "Oli",
+        "review": {
+          "status": "supported",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The official Oli specification states 31 active degrees of freedom for Oli, matching the recorded value and claim scope."
+        }
       }
     },
     "walking_speed_kmh": {
@@ -58,7 +67,16 @@
       "source": {
         "url": "https://www.limxdynamics.com/en/products/oli/spec",
         "quote": "Maximum Joint Torque 150N·m",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "variant": "Oli",
+        "review": {
+          "status": "supported",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The official Oli specification states a maximum joint torque of 150 N·m for Oli, matching the recorded value and claim scope."
+        }
       },
       "note": "Spec sheet footnote: 'The maximum torque differs among motors. The value shown represents the maximum torque of the highest-torque motor.'"
     },
@@ -110,7 +128,15 @@
       "source": {
         "url": "https://interestingengineering.com/innovation/humanoid-robot-oli-full-body-human-like-sequence",
         "quote": "the robotics company showcased two Oli humanoids lying down on the floor and then getting back up autonomously",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-20",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The per-host request budget was reached during the review, so the source content and claim could not be re-established."
+        }
       },
       "note": "From a YouTube video released 2025-10-23, covered by Interesting Engineering (published 2025-10-28); explicit 'autonomously' from the source."
     },
@@ -121,7 +147,15 @@
       "source": {
         "url": "https://www.humanoidsdaily.com/news/limx-dynamics-secures-200m-pre-ipo-round-unveils-fully-autonomous-oli-in-uncut-demo",
         "quote": "no teleoperation and is captured in 'one continuous take'",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Oli were not fully verified."
+        }
       },
       "note": "LimX's own uncut, single-take household-chores demo (published around 2026-07-25), described by LimX and Humanoids Daily as fully autonomous long-horizon mobile manipulation ('entirely autonomously'); the source does not itemize the specific objects picked and placed."
     }

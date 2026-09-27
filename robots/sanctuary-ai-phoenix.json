@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.therobotreport.com/sanctuary-ai-unveils-general-purpose-humanoid-robot/",
         "quote": "20 degrees of freedom",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "walking_speed_kmh": {
@@ -67,7 +75,15 @@
       "source": {
         "url": "https://www.therobotreport.com/sanctuary-ai-integrates-tactile-sensors-into-phoenix-general-purpose-robots/",
         "quote": "21 degree-of-freedom (DoF) hand",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "tactile_skin": {
@@ -76,7 +92,15 @@
       "source": {
         "url": "https://www.therobotreport.com/sanctuary-ai-integrates-tactile-sensors-into-phoenix-general-purpose-robots/",
         "quote": "a seven-cell touch sensor with micro-barometers",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "locomotion": {
@@ -125,7 +149,15 @@
       "source": {
         "url": "https://www.therobotreport.com/sanctuary-ai-integrates-tactile-sensors-into-phoenix-general-purpose-robots/",
         "quote": "the primary use case for our touch sensors is to speed up teleoperation activity",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "CEO James Wells describing teleoperation (with tactile feedback) as Sanctuary's recognized method for both remote task execution and capturing imitation-learning training data via Carbon; a general company statement rather than one specific demonstrated session, hence status 'claimed' not 'demonstrated'."
     }

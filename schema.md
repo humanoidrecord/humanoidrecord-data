@@ -100,7 +100,10 @@ label and short definition there); an unknown id fails validation.
 `status` is the same `claimed | demonstrated | shipped` used everywhere else
 (`shipped` means a named customer is shown using it, not just the
 manufacturer). `source.timestamp` is optional, `mm:ss`, for pointing at the
-moment in a video. `note` is optional free text.
+moment in a video. With the evidence-review fields below, a supported video
+requires a real segment start, the concrete robot variant, and
+`review.method: "video"`. `source.timestamp_end` may add the segment end and
+must be later than the start. `note` is optional free text.
 
 `autonomy` is required and is one of `teleoperated | scripted | autonomous |
 unknown`. A `demonstrated` capability with `autonomy: unknown` is allowed —
@@ -164,6 +167,66 @@ be the number as printed on the patent (e.g. a USPTO design patent
 resized at build time to a max width of 800px before being copied into
 `dist/media/`.
 
+## Promises
+
+`promises` is an optional array, one entry per dated commitment a
+manufacturer made about its own robot — a delivery, a production volume, a
+launch, an "early access" window — in its own words:
+
+```json
+{
+  "id": "<slug>-<kort>",
+  "claim": "Full-scale Optimus production",
+  "target": "2027",
+  "made_on": "2026-04-22",
+  "quote": "...",
+  "source_url": "https://...",
+  "source_name": "Tesla Q1 2026 earnings call",
+  "accessed": "2026-09-27",
+  "status": "open",
+  "revised_to": "<promise id>",
+  "met_evidence": "https://..."
+}
+```
+
+`id` is unique within the robot's own `promises` array (not globally),
+kebab-case, e.g. `tesla-optimus-full-scale-production`. `target` is the
+manufacturer's own stated date, in whatever grain they gave it: an ISO
+date (`2027-06-15`), a month (`2026-11`), a quarter (`2026-Q4`), a half
+(`2027-H1`), or a bare year (`2027`). `made_on` is the date the promise was
+made (not the date it was recorded); `accessed` is the date the source was
+checked, same convention as everywhere else, and must be on or after
+`made_on`. `quote` is a literal quote (max 300 characters, same rule as
+`source.quote` elsewhere) of the manufacturer making the claim — this is a
+`claimed`-tier record by construction, so there is no separate `status`
+field for evidence tier the way specs have; `promises[].status` instead
+tracks the promise's own outcome.
+
+`status` is one of:
+
+- `open` — the deadline has not yet passed and nothing has resolved it.
+- `met` — a named delivery/production/launch happened that satisfies the
+  claim; record the evidence URL in `met_evidence`.
+- `missed` — the deadline passed with no resolving evidence, and nobody
+  has recorded a replacement promise for it.
+- `revised` — the manufacturer replaced this promise with a new one before
+  or after the deadline; `revised_to` names the new promise's `id`.
+
+Note that `status: "open"` is not updated automatically when its deadline
+passes — the record stays `open` until someone records the outcome as
+`met`, `missed`, or `revised`. The rendered page derives a display-only
+`overdue` state for an `open` promise past its deadline (see
+`tools/promises.js#effectiveStatus`); that derived state is never written
+back to the data.
+
+**Deadline rule** (`tools/promises.js#deadlineOf`): a bare year deadlines
+on December 31 of that year; a quarter deadlines on the last day of that
+quarter (Q1 03-31, Q2 06-30, Q3 09-30, Q4 12-31); a half deadlines on the
+last day of that half (H1 06-30, H2 12-31); a month deadlines on that
+month's last calendar day; an ISO date is its own deadline.
+`daysLeft(target, today)` is the deadline minus today, in days — negative
+means the deadline has passed.
+
 ## Source object
 
 Every value — spec, price, or timeline event — carries a `source`:
@@ -174,6 +237,47 @@ Every value — spec, price, or timeline event — carries a `source`:
 | `quote` | yes | literal quote, max 300 characters |
 | `accessed` | yes | `YYYY-MM-DD`, date the source was checked |
 | `archive` | no | archive.org (or similar) permalink |
+| `media_type` | no | `article | video | paper | repository | documentation | unknown` |
+| `publisher_type` | no | `official | independent | community | unknown` |
+| `variant` | no | concrete robot/model variant shown or described; required for every supported review |
+| `published` | no | `YYYY-MM-DD`, publication date when known |
+| `evidence_date` | no | `YYYY-MM-DD`, event or observation date when distinct from publication |
+| `timestamp` | no | `mm:ss`, start of a real video segment |
+| `timestamp_end` | no | `mm:ss`, optional segment end later than `timestamp` |
+| `review` | no | evidence review object described below |
+
+The optional `review` object records what was inspected for this specific
+claim:
+
+```json
+{
+  "status": "supported|insufficient|inaccessible|conflicting|unreviewed",
+  "checked": "YYYY-MM-DD",
+  "reason": "...",
+  "method": "text|video|physical|unknown"
+}
+```
+
+`checked` is required except for `unreviewed` and must be a real calendar
+date. `reason` is required for
+`insufficient`, `inaccessible`, and `conflicting`. `supported` means only
+that the quoted or observed evidence supports this claim; it does not make a
+manufacturer source independent and does not prove a claim universally true.
+The claim's `status` and a capability's `autonomy` remain separate judgments.
+Adding or changing a review never promotes either field.
+
+A supported review requires an explicit, known `media_type`, a concrete
+review method (not `unknown`), and a non-empty `variant`. A supported video review additionally requires
+`media_type: "video"`, `method: "video"`, and a real `timestamp`. The video
+method is invalid for every other media type. If `media_type` explicitly
+names a non-video medium, timestamps are invalid. `media_type: "unknown"`
+can only carry an unresolved review. A video that has not been
+watched at a specific segment stays `unreviewed`, `insufficient`, or
+`inaccessible`; `00:00` must never be used as a placeholder.
+
+All new fields are additive. Existing source objects remain valid so legacy
+gaps can be reviewed progressively instead of being filled with invented
+metadata.
 
 ## Price entries
 
@@ -313,8 +417,11 @@ folded into, the `claimed / demonstrated / shipped` ladder.
 one of the three values, every value-bearing object has a non-empty
 `source.url`, `source.quote` (≤300 chars) and `source.accessed`
 (`YYYY-MM-DD`), and `slug` matches the filename. For `capabilities`: `id`
-must be in `data/capabilities.json`, `autonomy` must be one of the four
-values, and `source.timestamp` (if present) must be `mm:ss`. For `results`:
+must be in `data/capabilities.json` and `autonomy` must be one of the four
+values. Optional evidence fields use the enums and relationships documented
+under Source object; timestamps are `mm:ss`, a segment end follows its start,
+and supported video evidence requires video review, variant, and timestamp.
+For `results`:
 `event` must match a slug under `data/events/`, `rank` must be an integer
 or `null`, and `autonomy` must be one of `autonomous | teleoperated |
 mixed | unknown`. Event records under `data/events/` are validated the
@@ -330,3 +437,21 @@ of `cart | quote | waitlist | preorder | none`; each
 and `source`; `delivery.timeline[].sector`, when present, must be one of
 `automotive | logistics | manufacturing | research | consumer |
 healthcare | other`.
+
+For `promises[]`: `id`, `claim`, `source_url`, `source_name` are required
+non-empty strings; `target` must parse under the deadline rule above
+(`tools/promises.js#isValidTarget`); `made_on` and `accessed` must be
+`YYYY-MM-DD` with `made_on` on or before `accessed`; `quote` is required,
+max 300 characters; `status` must be one of `open | met | missed |
+revised`; `revised_to`, when present, must match another promise's `id`
+within the same robot record; `met_evidence`, when present, must be a
+non-empty string.
+
+## Independence
+
+humanoidrecord.com accepts no money, samples, or sponsorship from robot
+manufacturers or their investors. Costs are carried by elk.solutions. Data
+corrections come only with a public source. Automated checks are logged;
+every change is a public commit with its source.
+
+GitHub data mirror: [github.com/humanoidrecord/humanoidrecord-data](https://github.com/humanoidrecord/humanoidrecord-data). DOI: [10.5281/zenodo.22919641](https://doi.org/10.5281/zenodo.22919641).

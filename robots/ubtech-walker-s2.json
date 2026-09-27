@@ -31,7 +31,15 @@
       "source": {
         "url": "https://heyupnow.com/blogs/news/ubtech-unveils-the-full-size-industrial-humanoid-robot-walker-s2-standing-1-76-meters-tall-and-capable-of-24-7-operation",
         "quote": "52 degrees of freedom in its bionic body",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "payload_kg": {
@@ -84,6 +92,30 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "ubtech-walker-s2-capacity-5000-2026",
+      "claim": "Annual capacity of 5,000 industrial humanoid robots",
+      "target": "2026",
+      "made_on": "2025-11-17",
+      "quote": "targeting an annual capacity of 5,000 industrial humanoid robots by 2026",
+      "source_url": "https://www.prnewswire.com/news-releases/ubtech-humanoid-robot-walker-s2-begins-mass-production-and-delivery-with-orders-exceeding-800-million-yuan-302616924.html",
+      "source_name": "UBTECH press release via PR Newswire",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "ubtech-walker-s2-capacity-10000-2027",
+      "claim": "Annual capacity scaling to 10,000 units",
+      "target": "2027",
+      "made_on": "2025-11-17",
+      "quote": "scaling to 10,000 units by 2027",
+      "source_url": "https://www.prnewswire.com/news-releases/ubtech-humanoid-robot-walker-s2-begins-mass-production-and-delivery-with-orders-exceeding-800-million-yuan-302616924.html",
+      "source_name": "UBTECH press release via PR Newswire",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "notes": [
     "Capabilities research (2026-09-20): UBTech's own footage and press coverage document Walker S2 performing an autonomous, dual-arm hot-swap of its own back-mounted battery in roughly three minutes (e.g. therobotreport/CNET/Thomasnet coverage of the demo video) -- a real capability, but there is no matching id in this site's fixed capabilities list (closest is 'continuous-operation-1h', which requires one continuous run, not a swap event). Aggregator pages (HumanoidHub, robotsxhumanity, etc.) describe box lifting/sorting and warehouse deployment in generic marketing language without a specific dated video or independent observation with a literal, checkable quote, so no box-handling capability entry was added. Capabilities block left empty pending a source that ties a named id to a quotable, dated demonstration.",
     "UBTech's own product page (ubtrobot.com/en/humanoid/products/walker-s2) is reachable and confirms payload and battery-swap claims directly, but does not state height or weight. Height (1.76 m) and DOF (52) here are sourced from a secondary aggregator (heyupnow.com) that republishes UBTech's launch claims without linking an original press release; no PR Newswire/Business Wire/IEEE Spectrum/Robot Report coverage with those exact figures was found during this session. Treat height/DOF as needing a stronger source in a follow-up.",

@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.prnewswire.com/news-releases/fourier-unveils-the-next-generation-humanoid-robot-gr-2-302262068.html",
         "quote": "53 degrees of freedom",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "payload_kg": {
@@ -67,7 +75,15 @@
       "source": {
         "url": "https://www.prnewswire.com/news-releases/fourier-unveils-the-next-generation-humanoid-robot-gr-2-302262068.html",
         "quote": "12-DoF dexterous hands—double the dexterity of previous models",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "tactile_skin": {
@@ -76,7 +92,15 @@
       "source": {
         "url": "https://www.techeblog.com/new-fourier-gr-2-humanoid-robot-upgrade/",
         "quote": "Equipped with six array-type tactile sensors, GR-2 can sense force, identify object shapes and materials, and adjust its grip in real time",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "actuator_torque_nm": {
@@ -85,7 +109,15 @@
       "source": {
         "url": "https://www.therobotreport.com/fourier-launches-gr-2-humanoid-software-platform/",
         "quote": "With peak torques exceeding 380 N.m (280.3 ft.-lb.), the FSA 2.0 actuators boost GR-2's agility and dynamic capabilities.",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-21",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "inaccessible",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The per-host request budget was reached during the review, so the source content and claim could not be re-established."
+        }
       }
     },
     "battery_swappable": {

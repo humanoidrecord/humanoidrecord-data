@@ -80,6 +80,30 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "agility-digit-5-early-access",
+      "claim": "Digit 5 early access",
+      "target": "2027-H1",
+      "made_on": "2026-09-15",
+      "quote": "Early access to Digit 5 is expected to begin in the first half of 2027",
+      "source_url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_name": "Agility Robotics, Digit 5 announcement",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "agility-digit-5-general-availability",
+      "claim": "Digit 5 general availability for manufacturing, warehouse and distribution operators",
+      "target": "2027",
+      "made_on": "2026-09-15",
+      "quote": "general availability for manufacturing, warehouse and distribution operators expected by the end of 2027",
+      "source_url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "source_name": "Agility Robotics, Digit 5 announcement",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "media": [
     {
       "type": "patent",

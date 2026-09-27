@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.unitree.com/h1/",
         "quote": "DOF of Each Leg: 5（Hip × 3 + Knee × 1 + Ankle × 1）; DOF of Each Arm: 4（Expandable）",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -67,7 +75,15 @@
       "source": {
         "url": "https://www.unitree.com/h1/",
         "quote": "Maximum Joint Torque 360N.m",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       },
       "note": "Peak torque at the knee joint (highest of the listed joints: knee ~360N.m, hip ~220N.m, ankle ~59N.m, arm ~75N.m)."
     },

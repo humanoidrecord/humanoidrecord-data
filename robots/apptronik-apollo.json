@@ -100,7 +100,15 @@
         "source": {
           "url": "https://media.mbusa.com/releases/release-cf381cd2fcff624ae37d3911631103dc-mercedes-benz-accelerates-the-transformation-of-its-production-network-by-integrating-ai-and-humanoid-robots-at-its-digital-factory-campus-in-berlin",
           "quote": "Mercedes-Benz is testing the use of Apollo, a humanoid robot from Apptronik, in production.",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-20",
+          "media_type": "article",
+          "publisher_type": "official",
+          "review": {
+            "status": "inaccessible",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The source returned HTTP 404 during the review, so the claim could not be re-established."
+          }
         },
         "sector": "automotive"
       }
@@ -114,7 +122,15 @@
       "source": {
         "url": "https://www.manus-meta.com/use-cases/mercedes-benz-deploys-apptroniks-apollo-at-factory-floor-using-manus-gloves",
         "quote": "human operators wearing MANUS gloves directly teleoperating Apollo demonstrated target movements while the system logged synchronized data in real time.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Apollo were not fully verified."
+        }
       },
       "note": "Describes the Mercedes-Benz Digital Factory Campus Berlin-Marienfelde pilot; published by MANUS (the glove vendor involved in the deployment), an independent third party to Apptronik and Mercedes-Benz, not a manufacturer highlight reel."
     }

@@ -65,12 +65,33 @@
         "source": {
           "url": "https://www.press.bmwgroup.com/global/photo/compilation/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
           "quote": "Humanoid robot Figure 03 at BMW Group Plant Spartanburg.",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+          }
         },
         "sector": "automotive"
       }
     ]
   },
+  "promises": [
+    {
+      "id": "figure-03-100k-four-years",
+      "claim": "100,000 Figure 03 robots produced via BotQ",
+      "target": "2029",
+      "made_on": "2025-10-09",
+      "quote": "with the goal of producing a total of 100,000 robots over the next four years",
+      "source_url": "https://www.figure.ai/news/introducing-figure-03",
+      "source_name": "Figure AI, Introducing Figure 03",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "capabilities": [
     {
       "id": "box-handling",
@@ -79,7 +100,15 @@
       "source": {
         "url": "https://www.figure.ai/news/f-03-at-bmw",
         "quote": "Figure 03's hands, arms, torso, and feet ... fluidly switches between precise picking and placement of thin-walled, individual parts and forceful manipulation requiring whole-body coordination.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Figure 03 were not fully verified."
+        }
       },
       "note": "Figure and BMW describe the Helix 02 model driving the behavior but neither states explicitly that no human supervises or intervenes on the line; per this dataset's rule that silence keeps autonomy at unknown rather than autonomous."
     }

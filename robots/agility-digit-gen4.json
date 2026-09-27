@@ -39,8 +39,16 @@
         "quantity_max": null,
         "source": {
           "url": "https://en.wikipedia.org/wiki/Agility_Robotics",
-          "quote": "Ford Motor Company (2020) \u2014 First commercial customer; Purpose: explore last-mile delivery",
-          "accessed": "2026-09-20"
+          "quote": "Ford Motor Company (2020) — First commercial customer; Purpose: explore last-mile delivery",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "independent",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+          }
         },
         "sector": "automotive"
       },
@@ -53,7 +61,15 @@
         "source": {
           "url": "https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/",
           "quote": "GXO has made the most progress with Digit, a humanoid robot that has been optimized to fit our needs and integrated with other automated technology in the warehouse.",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "independent",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+          }
         },
         "sector": "logistics"
       },
@@ -66,7 +82,15 @@
         "source": {
           "url": "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",
           "quote": "Broadening our partnership with Agility Robotics, we will begin testing their bipedal robot, Digit, for use in our operations.",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "independent",
+          "review": {
+            "status": "insufficient",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The reviewed text does not establish a first-customer-delivery event for the exact recorded variant and date; testing, integration, or presence is not delivery evidence."
+          }
         },
         "sector": "logistics"
       }
@@ -80,9 +104,42 @@
       "source": {
         "url": "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes",
         "quote": "picking items on and off an AMR to a conveyor",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Digit (2020 generation) were not fully verified."
+        }
       },
       "note": "GXO's Flowery Branch facility, named customer, 100,000+ totes moved by late 2025. Agility's own page describes the task and separately states the underlying pipeline 'blends traditional control methods, teleoperated demonstrations, policy training, and refinement' -- it does not explicitly say current day-to-day operation runs with no human in the loop, so autonomy is recorded as unknown rather than autonomous, per this dataset's strict rule."
+    }
+  ],
+  "promises": [
+    {
+      "id": "agility-digit-app-delivery-2024",
+      "claim": "First Digit deliveries to Agility Partner Program customers",
+      "target": "2024",
+      "made_on": "2023-09-18",
+      "quote": "customers that are participating in the Agility Partner Program (APP) can expect delivery of the first Digits in 2024, with general market availability in 2025",
+      "source_url": "https://www.agilityrobotics.com/content/opening-robofab-worlds-first-factory-for-humanoid-robots",
+      "source_name": "Agility Robotics, RoboFab opening announcement",
+      "accessed": "2026-09-27",
+      "status": "met",
+      "met_evidence": "https://gxo.com/news_article/shaping-supply-chains-with-humanoid-technology/"
+    },
+    {
+      "id": "agility-digit-general-availability-2025",
+      "claim": "General market availability of Digit",
+      "target": "2025",
+      "made_on": "2023-09-18",
+      "quote": "with general market availability in 2025",
+      "source_url": "https://www.agilityrobotics.com/content/opening-robofab-worlds-first-factory-for-humanoid-robots",
+      "source_name": "Agility Robotics, RoboFab opening announcement",
+      "accessed": "2026-09-27",
+      "status": "open"
     }
   ],
   "media": [

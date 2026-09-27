@@ -40,7 +40,15 @@
       "source": {
         "url": "https://shop.unitree.com/products/unitree-h2",
         "quote": "31 degrees of freedom",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "walking_speed_kmh": {
@@ -58,7 +66,15 @@
       "source": {
         "url": "https://shop.unitree.com/products/unitree-h2",
         "quote": "31 degrees of freedom, 360N.m joint torque, and precise dynamic movement replication.",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     }
   },

@@ -40,7 +40,15 @@
       "source": {
         "url": "http://www.galbot.com/g1/",
         "quote": "合计 21",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -138,7 +146,15 @@
       "source": {
         "url": "https://chozan.co/galbot-g1/",
         "quote": "AstraBrain translates natural language into physical actions in real time and supports autonomous task execution without fixed scripts.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for G1 were not fully verified."
+        }
       },
       "note": "Galbot's own architecture description (via its AstraBrain control stack) explicitly claims autonomous task execution. A public video, 'Galbot G1 pick-and-deliver from shelf to customers 100% automatically!' (YouTube Shorts, https://www.youtube.com/shorts/kb362y4mB9A), shows the shelf-to-customer pick-and-place task referenced here, though a specific in-video timestamp/control statement could not be independently verified during this build. Treated as a manufacturer claim of autonomy for its own control stack rather than an independent-party observation."
     }

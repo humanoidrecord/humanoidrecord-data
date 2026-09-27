@@ -45,7 +45,15 @@
       "source": {
         "url": "https://interestingengineering.com/ai-robotics/clone-demos-creepy-humanoid-hand",
         "quote": "a human wearing a sensor glove",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Alpha were not fully verified."
+        }
       },
       "note": "Demo of the Clone hand only (mounted on a desk), not the full Alpha body; operator wears a sensor glove and a neural-network 'V2 Controller' translates finger/wrist motion into the artificial-muscle hand in real time. This dataset only records what is shown on camera, so this entry covers the hand demo, not a claim about Alpha's full-body teleoperation."
     },
@@ -56,7 +64,15 @@
       "source": {
         "url": "https://interestingengineering.com/ai-robotics/clone-demos-creepy-humanoid-hand",
         "quote": "pressure pads in the palm",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for Alpha were not fully verified."
+        }
       },
       "note": "Palm pressure pads reported to detect grip force during the same glove-teleoperated hand demo; shown affecting grip behavior on camera, not just listed as a spec."
     }
@@ -78,6 +94,19 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "clone-alpha-preorders-2025",
+      "claim": "Pre-orders for the 279-unit Clone Alpha open",
+      "target": "2025",
+      "made_on": "2024-12-06",
+      "quote": "Pre-orders available in 2025",
+      "source_url": "https://clonerobotics.com/pre-order/",
+      "source_name": "Clone Robotics, pre-order page",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "notes": [
     "No manufacturer source states Alpha's height, weight, or degrees-of-freedom with a checkable literal quote. Clone's own /research/ specs page currently reads 'We are currently researching, page will be available soon' (accessed 2026-09-20). Aggregator sites (Humanoid Index, Humanoid.guide, etc.) widely repeat figures of ~170 cm / ~60 kg / 164 DOF, but per the evidence rules these do not qualify as a claimed-status source because they do not cite a traceable manufacturer statement for those exact numbers. Specs are left empty rather than sourced to an aggregator.",
     "No checkout price has ever been published by Clone Robotics; the pre-order page collects a waitlist signup without a stated amount, so price_history is empty rather than guessed. Clone's 2023 pitch mentioned an aspirational ~$20,000 target price, and the founder repeated a similar figure in a March 2026 interview, but neither is an orderable price.",

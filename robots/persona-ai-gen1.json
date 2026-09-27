@@ -35,7 +35,15 @@
       "source": {
         "url": "https://persona.ai/robot-welding-in-a-real-industrial-environment/",
         "quote": "our human operators guide the robot through dexterous tasks in real time",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "Persona AI's own account of a VR-headset-teleoperated welding test at ARC Specialties, Houston; explicitly described as human-guided, collecting data toward future autonomous operation."
     },
@@ -46,7 +54,15 @@
       "source": {
         "url": "https://persona.ai/robot-welding-in-a-real-industrial-environment/",
         "quote": "strike a lit torch, maintain a steady arc, and successfully lay down a weld path",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "Same teleoperated welding-torch demo; robot squats, welds and stands back up under its own power while under human teleoperation."
     }
@@ -82,6 +98,30 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "persona-ai-gen1-prototype-2026",
+      "claim": "Prototype humanoid welding robots delivered to HD Hyundai",
+      "target": "2026",
+      "made_on": "2025-05-07",
+      "quote": "Prototype completion targeted for end of 2026",
+      "source_url": "https://www.prnewswire.com/news-releases/hd-hyundai-and-persona-ai-sign-agreement-to-deploy-humanoid-welding-robots-for-shipbuilding-automation-302449258.html",
+      "source_name": "PR Newswire, HD Hyundai / Persona AI",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "persona-ai-gen1-commercial-2027",
+      "claim": "Field testing and full commercial deployment at shipyards",
+      "target": "2027",
+      "made_on": "2025-05-07",
+      "quote": "field testing and commercialization commencing in 2027",
+      "source_url": "https://www.prnewswire.com/news-releases/hd-hyundai-and-persona-ai-sign-agreement-to-deploy-humanoid-welding-robots-for-shipbuilding-automation-302449258.html",
+      "source_name": "PR Newswire, HD Hyundai / Persona AI",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "notes": [
     "Persona AI's own site (persona.ai) does not publish numeric specs (height/weight/DOF/speed/payload) for Gen 1; specs is left empty rather than sourced to press coverage. Press figures conflict: RobotAIGeek (Jul 2026, on-site Houston deployment) reports '175cm, 85kg', while other secondary aggregators (not traced to a manufacturer statement) report 175 cm / 70 kg and ~32 DOF. Neither height/weight pairing could be confirmed against a Persona AI-published spec sheet during this build.",
     "A later RoboHorizon report (2025-12-31) describes a $42M pre-seed round for Persona AI's humanoid welding bot, which appears inconsistent with (or a follow-on close to) the $27M pre-seed reported in May 2025 by The Robot Report; both figures are recorded here as a discrepancy rather than resolved. See https://robohorizon.com/en-us/news/2025/12/persona-ai-unveils-humanoid-bot-with-42m-to-weld-in-shipyards/ (accessed 2026-09-20).",

@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.booster.tech/booster-t1/",
         "quote": "Total DoFs: 23",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -58,7 +66,15 @@
       "source": {
         "url": "https://www.booster.tech/booster-t1/",
         "quote": "Max Peak Torque: 130N·m",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     }
   },
@@ -113,7 +129,15 @@
       "source": {
         "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
         "quote": "Robots participating in the Humanoid League competitions must act autonomously while a competition is running. No external power supply, teleoperation, remote control, or remote brain of any kind is allowed.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for T1 were not fully verified."
+        }
       },
       "note": "RoboCup Humanoid League Laws of the Game 2025, rule 335 (Communication and Control section), bans teleoperation for every robot playing a match under this ruleset. A named team competing with this exact platform: Tsinghua University's 'Hephaestus' team won the AdultSize category at RoboCup 2025 in Salvador, Brazil (July 2025) using Booster T1 robots -- 'Tsinghua dominated the competition using Chinese-developed Booster T1 robots, achieving decisive victories over multiple opponents' and 'Tsinghua University has placed top of the AdultSize category in the RoboCup Humanoid League soccer world championship, in the first time a Chinese team has claimed the top honor' (China Daily, https://global.chinadaily.com.cn/a/202507/25/WS6882e633a310ad07b5d91f03.html, accessed 2026-09-20; corroborated by Xinhua, https://english.news.cn/20250723/1d0f0b61bff142f5954fc42621c68bea/c.html). Booster's own RoboCup demo code (github.com/BoosterRobotics/robocup_demo) confirms the platform's vision/brain/game-controller stack 'makes autonomous decisions to kick the ball and complete the full RoboCup match', consistent with the rule. 'run' is used as the closest fixed capability id for AdultSize soccer play; no dedicated 'soccer' id exists in data/capabilities.json."
     }

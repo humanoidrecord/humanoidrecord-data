@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "2.0",
+  "changes": [
+    "Adds optional media type, publisher relation and concrete robot variant to claim sources.",
+    "Adds optional per-claim source review status, method, checked date and reason.",
+    "Adds optional evidence dates and explicit video segment end timestamps."
+  ]
+}

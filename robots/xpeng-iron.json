@@ -40,7 +40,15 @@
       "source": {
         "url": "https://cnevpost.com/2024/11/06/xpeng-2024-ai-day/",
         "quote": "has over 60 joints",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "hand_dof": {
@@ -49,7 +57,15 @@
       "source": {
         "url": "https://cnevpost.com/2025/11/05/xpeng-unveils-next-gen-iron-humanoid-robot/",
         "quote": "a hand with 22 degrees of freedom",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "compute": {
@@ -93,6 +109,30 @@
       }
     ]
   },
+  "promises": [
+    {
+      "id": "xpeng-iron-mass-production-2026",
+      "claim": "Iron mass production begins",
+      "target": "2026",
+      "made_on": "2026-09-08",
+      "quote": "mass production will begin by year-end",
+      "source_url": "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/",
+      "source_name": "CnEVPost",
+      "accessed": "2026-09-27",
+      "status": "open"
+    },
+    {
+      "id": "xpeng-iron-launch-deliveries-2027",
+      "claim": "Iron officially launched with deliveries in China and overseas",
+      "target": "2027",
+      "made_on": "2026-09-08",
+      "quote": "officially launch Iron and begin deliveries in China and overseas markets in 2027",
+      "source_url": "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/",
+      "source_name": "CnEVPost",
+      "accessed": "2026-09-27",
+      "status": "open"
+    }
+  ],
   "media": [
     {
       "type": "photo",

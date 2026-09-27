@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.unitree.com/g1/",
         "quote": "23 (standard); 23 - 43 (G1 EDU)",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -76,7 +84,15 @@
       "source": {
         "url": "https://mikekalil.com/blog/textile-robot-e-skin/",
         "quote": "Shanghai-based JQ Industries demonstrated the capabilities using a Unitree G1 humanoid robot, but the technology is intended for use across platforms.",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       },
       "note": "This is a third-party e-skin build (Shanghai-based JQ Industries' fabric-based piezoresistive tactile sensor, woven with conductive fibers that detect pressure, contact and force distribution), demonstrated on a Unitree G1 chassis as a showcase platform -- not a Unitree-manufactured or Unitree-sold component. A short video of the demo is publicly referenced ('This Robot's Skin Can Actually Feel Touch', YouTube Shorts, https://www.youtube.com/shorts/k9tj5kb3rHI) but could not be directly viewed during this build (YouTube consent redirect blocked automated fetch); 'demonstrated' status rests on the press description of an actual JQ Industries demo rather than direct video verification, and should be revisited if the video can be reviewed frame-by-frame."
     },
@@ -152,7 +168,15 @@
         "source": {
           "url": "https://www.durham.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
           "quote": "Our Department of Computer Science has welcomed an exciting new arrival: Alan, a humanoid robot that will support a wide range of future research. ... Alan is a Unitree G1 Edu robot",
-          "accessed": "2026-09-20"
+          "accessed": "2026-09-20",
+          "media_type": "article",
+          "publisher_type": "independent",
+          "review": {
+            "status": "inaccessible",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The source returned no readable response during the review, so the claim could not be re-established."
+          }
         }
       }
     ]
@@ -165,7 +189,15 @@
       "source": {
         "url": "https://arxiv.org/abs/2511.07407",
         "quote": "the default manufacturer-provided recovery controller on the Unitree G1, which executes a hard-coded joint trajectory with PD stabilization",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "paper",
+        "publisher_type": "independent",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The text source was reviewed, but no video segment was watched; the existing capability status and autonomy classification for the exact recorded robot variant were not fully verified."
+        }
       },
       "note": "Independent research paper (not Unitree marketing) describes and benchmarks the stock get-up behavior shipped on the robot; it is a fixed, hard-coded trajectory, not a learned or teleoperated one, hence 'scripted' rather than 'autonomous'."
     }
@@ -228,6 +260,19 @@
         "note": "CC0 (public domain dedication) by photographer Sayanesy, uploaded 2024-11-18, via Wikimedia Commons; not one of the fixed manufacturer/patent license names, recorded as \"other\" with the CC0 deed linked."
       },
       "credit": "Photo: Sayanesy, CC0"
+    }
+  ],
+  "promises": [
+    {
+      "id": "unitree-g1-shipments-2026",
+      "claim": "Unitree company-wide humanoid robot shipments",
+      "target": "2026",
+      "made_on": "2026-02-19",
+      "quote": "global humanoid robot shipments could reach 'tens of thousands' this year, with his company accounting for around 10,000 to 20,000 units",
+      "source_url": "https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/",
+      "source_name": "eWeek (citing Unitree CEO Wang Xingxing via 36Kr)",
+      "accessed": "2026-09-27",
+      "status": "open"
     }
   ],
   "notes": [

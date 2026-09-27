@@ -40,7 +40,15 @@
       "source": {
         "url": "https://www.agibot.com/products/A2",
         "quote": "40 + Active DoF",
-        "accessed": "2026-09-20"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_runtime_min": {
@@ -58,7 +66,15 @@
       "source": {
         "url": "https://www.agibot.com/products/A2",
         "quote": "delivering peak torque of 512Nm and stable operation for thousands of hours",
-        "accessed": "2026-09-21"
+        "accessed": "2026-09-27",
+        "media_type": "article",
+        "publisher_type": "official",
+        "review": {
+          "status": "insufficient",
+          "method": "text",
+          "checked": "2026-09-27",
+          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
+        }
       }
     },
     "battery_wh": {
