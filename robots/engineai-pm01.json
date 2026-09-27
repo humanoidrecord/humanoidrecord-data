@@ -188,5 +188,41 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a PM01 Edu model was found; equivalence to this unsuffixed PM01 record was not established."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.engineai.com.cn/about-news-media/23.html"
+      ],
+      "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+    },
+    "groups": [
+      {
+        "id": "planetary-joint-modules",
+        "scope": "Joint modules",
+        "variant": "PM01",
+        "drive": null,
+        "transmission": "planetary",
+        "motion": null,
+        "architecture": null,
+        "status": "claimed",
+        "source": {
+          "url": "https://www.engineai.com.cn/about-news-media/23.html",
+          "quote": "PM01使用的是全行星关节模组的方案",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "PM01",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "EngineAI's official PM01 FAQ states that PM01 uses all-planetary joint modules."
+          }
+        }
+      }
+    ]
   }
 }

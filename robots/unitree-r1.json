@@ -241,5 +241,16 @@
         "compatibility": []
       }
     ]
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/unitreerobotics/unitree_mujoco/blob/main/readme.md"
+      ],
+      "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+    },
+    "groups": []
   }
 }

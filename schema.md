@@ -102,6 +102,49 @@ supported source review whose `reason` describes the test context, plus
 non-empty `notes`. Validation and builds never download or execute an
 external simulation artefact.
 
+`actuator_architecture` is an optional top-level research record. It stores
+only exact-variant actuator facts and keeps separately sourced joint groups
+separate:
+
+```json
+{
+  "review": {
+    "status": "found|not_confirmed",
+    "checked": "YYYY-MM-DD",
+    "urls": ["https://..."],
+    "reason": "..."
+  },
+  "groups": [{
+    "id": "unique-id",
+    "scope": "joints or robot area covered by this claim",
+    "variant": "concrete robot variant",
+    "drive": "electric|hydraulic|pneumatic|other|null",
+    "transmission": "harmonic|planetary|cycloidal|tendon|belt|direct|other|null",
+    "motion": "rotary|linear|other|null",
+    "architecture": "quasi_direct_drive|series_elastic|parallel_elastic|other|null",
+    "status": "claimed|demonstrated",
+    "source": {
+      "url": "https://...",
+      "quote": "...",
+      "accessed": "YYYY-MM-DD",
+      "variant": "concrete robot variant"
+    },
+    "notes": "required when any property is other"
+  }]
+}
+```
+
+The research review follows the same checked-date, unique HTTP(S) URL, and
+reason rules as `simulation`. `found` requires at least one group;
+`not_confirmed` requires an empty `groups` array and records only the result of
+the targeted search. Group ids are unique within a robot. `scope` and
+`variant` are non-empty. All four nullable actuator property keys are required,
+and at least one must be known. `other` requires a non-empty `notes` value.
+Every group has its own source under the shared source contract. The source
+must have an HTTP(S) URL, a calendar-valid `accessed`, and a `source.variant`
+equal to the group's `variant`. Torque remains a separate measured
+specification and is never inferred from this record.
+
 `warranty` is an array, because coverage differs by region and reseller:
 `[{ months, region, source, status }]`. Record one entry per region/seller
 combination that has its own source; do not average or guess a global
@@ -494,6 +537,11 @@ For `simulation`: the research review, artifact cardinality, unique ids,
 formats, provenance, HTTP(S) URLs, revisions, licence shape, concrete variant
 matching, compatibility source, simulator and evidence level are validated.
 `tested` additionally requires a supported review and written test context.
+
+For `actuator_architecture`: the research review, group cardinality, unique
+ids, non-empty scope and variant, four required nullable actuator properties,
+at least one known property, `other` notes, claim status, source URL/date, and
+exact group/source variant matching are validated.
 
 For `promises[]`: `id`, `claim`, `source_url`, `source_name` are required
 non-empty strings; `target` must parse under the deadline rule above

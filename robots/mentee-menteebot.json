@@ -182,5 +182,16 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.menteebot.com"
+      ],
+      "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+    },
+    "groups": []
   }
 }

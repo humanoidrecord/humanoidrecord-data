@@ -158,6 +158,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://neura-robotics.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -337,6 +348,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agibot.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -498,6 +520,18 @@
           "compatibility": []
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://wiki.pndbotics.com/en/robot/humanoid_robot/",
+          "https://wiki.pndbotics.com/en/products/introduce/"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -685,6 +719,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://robotics.hexagon.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -813,6 +858,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://clonerobotics.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -988,6 +1044,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://apptronik.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -1232,6 +1299,42 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://bostondynamics.com/blog/electric-new-era-for-atlas/"
+        ],
+        "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+      },
+      "groups": [
+        {
+          "id": "electric-platform",
+          "scope": "Whole robot platform",
+          "variant": "Atlas (Electric)",
+          "drive": "electric",
+          "transmission": null,
+          "motion": null,
+          "architecture": null,
+          "status": "claimed",
+          "source": {
+            "url": "https://bostondynamics.com/blog/electric-new-era-for-atlas/",
+            "quote": "a fully electric Atlas robot designed for real-world applications",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Atlas (Electric)",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "Boston Dynamics explicitly identifies the new Atlas variant as fully electric."
+            }
+          }
+        }
+      ]
     }
   },
   {
@@ -1414,6 +1517,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agilityrobotics.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -1559,6 +1673,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.agilityrobotics.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -1730,6 +1855,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://robonova.world"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -1882,6 +2018,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.figure.ai"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -2111,6 +2258,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.gotokepler.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -2303,6 +2461,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.galbot.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -2672,6 +2841,17 @@
           "compatibility": []
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/main/readme.md"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -2897,6 +3077,17 @@
           "compatibility": []
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/FFTAI/Wiki-GRx-URDF"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -3205,6 +3396,17 @@
           ]
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/main/readme.md"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -3421,6 +3623,17 @@
           ]
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/main/readme.md"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -3592,6 +3805,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.xpeng.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -3778,6 +4002,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.menteebot.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -4000,6 +4235,66 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.1x.tech/discover/neo-factory"
+        ],
+        "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+      },
+      "groups": [
+        {
+          "id": "revo2-electric-motor",
+          "scope": "Revo2 actuator motor",
+          "variant": "Neo",
+          "drive": "electric",
+          "transmission": null,
+          "motion": null,
+          "architecture": null,
+          "status": "claimed",
+          "source": {
+            "url": "https://www.1x.tech/discover/neo-factory",
+            "quote": "the world’s highest-performance, lowest cost electric motor for humanoid robotics",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Neo",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "The official Neo factory article explicitly describes its humanoid actuator motor as electric."
+            }
+          }
+        },
+        {
+          "id": "tendon-actuation",
+          "scope": "Neo actuation transmission",
+          "variant": "Neo",
+          "drive": null,
+          "transmission": "tendon",
+          "motion": null,
+          "architecture": null,
+          "status": "claimed",
+          "source": {
+            "url": "https://www.1x.tech/discover/neo-factory",
+            "quote": "the heart of NEO’s tendon-driven actuation system",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "Neo",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "The official Neo factory article explicitly describes Neo's actuation system as tendon-driven."
+            }
+          }
+        }
+      ]
     }
   },
   {
@@ -4193,6 +4488,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.limxdynamics.com"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -4450,6 +4756,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.tesla.com/AI"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -4594,6 +4911,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://persona.ai"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -4776,6 +5104,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://sanctuary.ai"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -4968,6 +5307,42 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a PM01 Edu model was found; equivalence to this unsuffixed PM01 record was not established."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "found",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://www.engineai.com.cn/about-news-media/23.html"
+        ],
+        "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+      },
+      "groups": [
+        {
+          "id": "planetary-joint-modules",
+          "scope": "Joint modules",
+          "variant": "PM01",
+          "drive": null,
+          "transmission": "planetary",
+          "motion": null,
+          "architecture": null,
+          "status": "claimed",
+          "source": {
+            "url": "https://www.engineai.com.cn/about-news-media/23.html",
+            "quote": "PM01使用的是全行星关节模组的方案",
+            "accessed": "2026-09-27",
+            "media_type": "article",
+            "publisher_type": "official",
+            "variant": "PM01",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-09-27",
+              "reason": "EngineAI's official PM01 FAQ states that PM01 uses all-planetary joint modules."
+            }
+          }
+        }
+      ]
     }
   },
   {
@@ -5213,6 +5588,17 @@
           "compatibility": []
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/unitreerobotics/unitree_mujoco/blob/main/readme.md"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -5535,6 +5921,17 @@
           "compatibility": []
         }
       ]
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/BoosterRobotics/booster_assets/blob/main/README.md"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -5640,6 +6037,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a TienKung Lite model was found; it does not match the Tiangong Ultra record."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/Open-X-Humanoid/TienKung_URDF"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   },
   {
@@ -5788,6 +6196,17 @@
         "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a Walker S2 EDU model was found; equivalence to the commercial Walker S2 record was not established."
       },
       "artifacts": []
+    },
+    "actuator_architecture": {
+      "review": {
+        "status": "not_confirmed",
+        "checked": "2026-09-27",
+        "urls": [
+          "https://github.com/UBTECH-Robot/WalkerS2-Model"
+        ],
+        "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+      },
+      "groups": []
     }
   }
 ]

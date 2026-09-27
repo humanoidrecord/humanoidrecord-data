@@ -157,5 +157,17 @@
         "compatibility": []
       }
     ]
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://wiki.pndbotics.com/en/robot/humanoid_robot/",
+        "https://wiki.pndbotics.com/en/products/introduce/"
+      ],
+      "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+    },
+    "groups": []
   }
 }

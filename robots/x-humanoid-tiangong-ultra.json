@@ -101,5 +101,16 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a TienKung Lite model was found; it does not match the Tiangong Ultra record."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/Open-X-Humanoid/TienKung_URDF"
+      ],
+      "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+    },
+    "groups": []
   }
 }

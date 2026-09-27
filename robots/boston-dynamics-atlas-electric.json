@@ -240,5 +240,41 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://bostondynamics.com/blog/electric-new-era-for-atlas/"
+      ],
+      "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+    },
+    "groups": [
+      {
+        "id": "electric-platform",
+        "scope": "Whole robot platform",
+        "variant": "Atlas (Electric)",
+        "drive": "electric",
+        "transmission": null,
+        "motion": null,
+        "architecture": null,
+        "status": "claimed",
+        "source": {
+          "url": "https://bostondynamics.com/blog/electric-new-era-for-atlas/",
+          "quote": "a fully electric Atlas robot designed for real-world applications",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Atlas (Electric)",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "Boston Dynamics explicitly identifies the new Atlas variant as fully electric."
+          }
+        }
+      }
+    ]
   }
 }

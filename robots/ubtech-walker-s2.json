@@ -144,5 +144,16 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable. Only a Walker S2 EDU model was found; equivalence to the commercial Walker S2 record was not established."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "not_confirmed",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://github.com/UBTECH-Robot/WalkerS2-Model"
+      ],
+      "reason": "Targeted actuator searches did not confirm an exact-variant architecture claim for this record; this does not mean none exists."
+    },
+    "groups": []
   }
 }

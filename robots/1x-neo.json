@@ -218,5 +218,65 @@
       "reason": "Targeted searches found no confirmed model for this record; does not mean unavailable."
     },
     "artifacts": []
+  },
+  "actuator_architecture": {
+    "review": {
+      "status": "found",
+      "checked": "2026-09-27",
+      "urls": [
+        "https://www.1x.tech/discover/neo-factory"
+      ],
+      "reason": "Exact-variant actuator architecture evidence was found in the listed official source and is recorded per group."
+    },
+    "groups": [
+      {
+        "id": "revo2-electric-motor",
+        "scope": "Revo2 actuator motor",
+        "variant": "Neo",
+        "drive": "electric",
+        "transmission": null,
+        "motion": null,
+        "architecture": null,
+        "status": "claimed",
+        "source": {
+          "url": "https://www.1x.tech/discover/neo-factory",
+          "quote": "the world’s highest-performance, lowest cost electric motor for humanoid robotics",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Neo",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The official Neo factory article explicitly describes its humanoid actuator motor as electric."
+          }
+        }
+      },
+      {
+        "id": "tendon-actuation",
+        "scope": "Neo actuation transmission",
+        "variant": "Neo",
+        "drive": null,
+        "transmission": "tendon",
+        "motion": null,
+        "architecture": null,
+        "status": "claimed",
+        "source": {
+          "url": "https://www.1x.tech/discover/neo-factory",
+          "quote": "the heart of NEO’s tendon-driven actuation system",
+          "accessed": "2026-09-27",
+          "media_type": "article",
+          "publisher_type": "official",
+          "variant": "Neo",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-09-27",
+            "reason": "The official Neo factory article explicitly describes Neo's actuation system as tendon-driven."
+          }
+        }
+      }
+    ]
   }
 }
