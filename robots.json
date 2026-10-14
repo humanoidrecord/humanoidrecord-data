@@ -967,6 +967,8 @@
       ],
       "evidence": [
         {
+          "kind": "pilot",
+          "customer": "Mercedes-Benz",
           "detail": "Mercedes-Benz says Apollo units were present at its Digital Factory Campus and collecting data in a production environment by its 18 March 2025 publication. The source does not identify their hardware generation or establish an arrival day, transaction type, or quantity.",
           "source": {
             "url": "https://group.mercedes-benz.com/company/production/production-network/mbdfc-humanoid-robots.html",
@@ -1096,17 +1098,18 @@
         "value": 56,
         "status": "claimed",
         "source": {
-          "url": "https://bostondynamics.com/atlas/",
-          "quote": "56",
-          "accessed": "2026-09-27",
+          "url": "https://bostondynamics.com/products/atlas/",
+          "quote": "DoF 56",
+          "accessed": "2026-10-04",
           "media_type": "documentation",
           "publisher_type": "official",
           "review": {
-            "status": "insufficient",
+            "status": "supported",
             "method": "text",
-            "checked": "2026-09-27",
-            "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
-          }
+            "checked": "2026-10-04",
+            "reason": "The official product page explicitly lists 56 degrees of freedom for the current industrial Atlas product."
+          },
+          "variant": "Atlas industrial product version (2026)"
         }
       },
       "battery_runtime_min": {
@@ -1276,7 +1279,7 @@
       "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty remain omitted for lack of Atlas-specific figures. No exact first-customer-delivery event or automotive delivery sector is asserted.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for electric Atlas -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-27",
+    "updated": "2026-10-04",
     "order_type": {
       "value": "quote",
       "status": "claimed",
@@ -1388,6 +1391,8 @@
       "timeline": [],
       "evidence": [
         {
+          "kind": "deployment",
+          "customer": "GXO / SPANX",
           "detail": "GXO reports Digit robots operational at its SPANX warehouse by the 27 June 2024 publication; the source does not establish the delivery day or count.",
           "source": {
             "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
@@ -1406,6 +1411,8 @@
           }
         },
         {
+          "kind": "deployment",
+          "customer": "GXO / SPANX",
           "detail": "Agility retrospectively identifies the customer-site generation at GXO as Digit 4. This links GXO’s operational report to this record; it does not establish an exact arrival date or independent verification.",
           "source": {
             "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
@@ -1424,6 +1431,8 @@
           }
         },
         {
+          "kind": "pilot",
+          "customer": "Amazon",
           "detail": "Amazon announced it would begin testing Digit; this wording does not establish receipt on publication day.",
           "source": {
             "url": "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",
@@ -1579,7 +1588,16 @@
         "source": {
           "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
           "quote": "repeatedly lift up to 50 lb. (22.7 kg) loads",
-          "accessed": "2026-09-20"
+          "accessed": "2026-10-04",
+          "media_type": "documentation",
+          "publisher_type": "official",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-10-04",
+            "reason": "The dated manufacturer announcement explicitly states this specification for Digit 5; measured performance is not independently established."
+          },
+          "variant": "Digit 5"
         }
       },
       "battery_runtime_min": {
@@ -1588,7 +1606,16 @@
         "source": {
           "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
           "quote": "90-minute runtime battery system charges in just 9 minutes",
-          "accessed": "2026-09-20"
+          "accessed": "2026-10-04",
+          "media_type": "documentation",
+          "publisher_type": "official",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-10-04",
+            "reason": "The dated manufacturer announcement explicitly states this specification for Digit 5; measured performance is not independently established."
+          },
+          "variant": "Digit 5"
         }
       },
       "charge_time_min": {
@@ -1597,7 +1624,16 @@
         "source": {
           "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
           "quote": "90-minute runtime battery system charges in just 9 minutes",
-          "accessed": "2026-09-21"
+          "accessed": "2026-10-04",
+          "media_type": "documentation",
+          "publisher_type": "official",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-10-04",
+            "reason": "The dated manufacturer announcement explicitly states this specification for Digit 5; measured performance is not independently established."
+          },
+          "variant": "Digit 5"
         }
       }
     },
@@ -1608,13 +1644,22 @@
         {
           "date": "2026-09-15",
           "event": "announced",
-          "detail": "Agility announces next-generation Digit 5 (1.81 m, 129 kg), citing more than $300 million in multi-year customer orders and early access targeted for H1 2027. No named-customer delivery of this generation has been reported yet.",
+          "detail": "Agility announces Digit 5 (1.81 m, 129 kg), reporting more than $300 million in multi-year orders as of May 2026, subject to contractual milestones. Early access is expected in H1 2027. This does not establish receipt of this generation by a named customer.",
           "quantity_min": null,
           "quantity_max": null,
           "source": {
             "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
-            "quote": "more than $300 million in multi-year customer orders for Digit 5",
-            "accessed": "2026-09-20"
+            "quote": "subject to satisfaction of certain contractual milestones",
+            "accessed": "2026-10-04",
+            "media_type": "documentation",
+            "publisher_type": "official",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-10-04",
+              "reason": "The manufacturer reports Digit 5 orders and contractual conditions; this source does not establish delivery."
+            },
+            "variant": "Digit 5"
           }
         }
       ]
@@ -1669,7 +1714,7 @@
       "actuator_torque_nm, battery_wh, battery_swappable, sdk, warranty, and order_type were left out (2026-09-21): the Digit 5 announcement discloses only the 90-min/9-min runtime-and-charge figures and 'proprietary cycloidal actuator technology' without an Nm value, and directs buyers to a sales/quote page ('Deploy Digit') without a literal, quotable ordering-model or warranty statement.",
       "locomotion left out (2026-09-21): agilityrobotics.com/solutions/digit-5, the Sept 2026 Digit 5 press release, IEEE Spectrum's coverage, and Agility's general Digit page were all checked; each describes leg joints, reach, or general humanoid-robot history in a bipedal category, but none gave a literal sentence stating Digit 5 itself is bipedal/two-legged. Left out rather than reused from the gen4 record's Amazon-newsroom quote, which covers a different hardware generation."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-10-04",
     "simulation": {
       "review": {
         "status": "not_confirmed",
@@ -1885,11 +1930,20 @@
     },
     "category": "full-size",
     "announced": {
-      "date": "2026-06-25",
+      "date": "2025-10-09",
       "source": {
-        "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
-        "quote": "Figure 03 is an upgraded humanoid robot from Figure AI, announced for Spartanburg on June 25, 2026",
-        "accessed": "2026-09-20"
+        "url": "https://www.figure.ai/news/introducing-figure-03",
+        "quote": "Today we’re introducing Figure 03, our 3rd generation humanoid robot.",
+        "accessed": "2026-10-04",
+        "media_type": "documentation",
+        "publisher_type": "official",
+        "review": {
+          "status": "supported",
+          "method": "text",
+          "checked": "2026-10-04",
+          "reason": "The manufacturer explicitly introduces Figure 03 and dates the announcement October 9, 2025."
+        },
+        "variant": "Figure 03"
       }
     },
     "specs": {
@@ -1908,17 +1962,25 @@
       "status": "shipped",
       "timeline": [
         {
-          "date": "2026-06-25",
+          "date": "2025-10-09",
           "event": "announced",
-          "detail": "Figure 03 announced as successor to Figure 02, with soft safety components, wireless charging, tactile-sensor hands, and speech-to-speech communication.",
+          "detail": "Figure introduces its third-generation humanoid, Figure 03, designed for Helix, home use and high-volume manufacturing.",
           "quantity_min": null,
           "quantity_max": null,
           "source": {
-            "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
-            "quote": "Figure 03 is an upgraded humanoid robot from Figure AI, announced for Spartanburg on June 25, 2026, with soft safety components, wireless charging, speech-to-speech communication, and improved tactile-sensor hands.",
-            "accessed": "2026-09-20"
-          },
-          "sector": "automotive"
+            "url": "https://www.figure.ai/news/introducing-figure-03",
+            "quote": "Today we’re introducing Figure 03, our 3rd generation humanoid robot.",
+            "accessed": "2026-10-04",
+            "media_type": "documentation",
+            "publisher_type": "official",
+            "review": {
+              "status": "supported",
+              "method": "text",
+              "checked": "2026-10-04",
+              "reason": "The manufacturer explicitly introduces Figure 03 and dates the announcement October 9, 2025."
+            },
+            "variant": "Figure 03"
+          }
         },
         {
           "date": "2026-06-30",
@@ -1936,6 +1998,8 @@
       ],
       "evidence": [
         {
+          "kind": "arrival",
+          "customer": "BMW Group",
           "detail": "BMW’s photo compilation captions identify Figure 03 at BMW Group Plant Spartanburg by 25 June 2026; the caption establishes reported physical presence, not sale or handover day.",
           "source": {
             "url": "https://www.press.bmwgroup.com/global/photo/compilation/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
@@ -1954,6 +2018,8 @@
           }
         },
         {
+          "kind": "arrival",
+          "customer": "BMW Group",
           "detail": "Figure reports that Figure 03 arrived in Hall 52 at BMW Group Plant Spartanburg for a first logistics demonstration; arrival day and commercial terms are not stated.",
           "source": {
             "url": "https://www.figure.ai/news/f-03-at-bmw",
@@ -2010,10 +2076,10 @@
     "notes": [
       "No manufacturer-published height/weight/DoF spec sheet for Figure 03 was located on figure.ai during this build (figure.ai/product returned HTTP 404); specs are left empty rather than filled from secondary blogs. Follow-up: check Figure's press kit or a dated product page once published.",
       "Shipped bar: BMW’s own dated photo captions identify a Figure 03 at Plant Spartanburg, and Figure says the model arrived in Hall 52 for a logistics demonstration. This supports exact-model presence at a named customer, but no exact delivery day, sale, transfer of title, quantity, or scaled operation.",
-      "The announced and first-demo timeline events retain their automotive sector. No exact first-customer-delivery event is asserted.",
+      "The general introduction timeline event has no sector; the first-demo event retains its automotive sector. No exact first-customer-delivery event is asserted.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Figure 03 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-27",
+    "updated": "2026-10-04",
     "media": [
       {
         "type": "patent",
@@ -2662,6 +2728,8 @@
       ],
       "evidence": [
         {
+          "kind": "receipt",
+          "customer": "Fraunhofer IPA",
           "detail": "Fraunhofer IPA says it received a Unitree G1 EDU-4 with Dex3-1 hands in May 2025; the source gives a month, not a day.",
           "source": {
             "url": "https://www.ipa.fraunhofer.de/en/press-media/press_releases/benchmark-for-humanoid-robots.html",
@@ -2680,6 +2748,8 @@
           }
         },
         {
+          "kind": "receipt",
+          "customer": "Fraunhofer IPA",
           "detail": "Fraunhofer IPA separately describes a G1 crate arriving at its campus and an unboxing event; this supports physical receipt but no exact day.",
           "source": {
             "url": "https://interaktiv.ipa.fraunhofer.de/embodied-ai/humanoide-roboter_statusquo-potenziale-forschungsfelder_teil1/",
@@ -2698,6 +2768,8 @@
           }
         },
         {
+          "kind": "receipt",
+          "customer": "Durham University",
           "detail": "Durham University says its Computer Science department has welcomed Alan, a Unitree G1 Edu robot; publication on 1 April 2026 is not a delivery date.",
           "source": {
             "url": "https://dur.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",
@@ -4175,6 +4247,7 @@
         "amount": 499,
         "currency": "USD",
         "variant": "monthly subscription",
+        "period": "month",
         "status": "claimed",
         "source": {
           "url": "https://www.1x.tech/discover/neo-home-robot",
@@ -4932,7 +5005,7 @@
     "promises": [
       {
         "id": "persona-ai-gen1-prototype-2026",
-        "claim": "Prototype humanoid welding robots delivered to HD Hyundai",
+        "claim": "Prototype humanoid welding robots completed by end of 2026",
         "target": "2026",
         "made_on": "2025-05-07",
         "quote": "Prototype completion targeted for end of 2026",
@@ -4960,7 +5033,7 @@
       "No public price has been found for Gen 1; Persona AI operates a robotics-as-a-service model without published unit pricing, so price_history is left empty.",
       "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Gen 1 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
     ],
-    "updated": "2026-09-21",
+    "updated": "2026-09-30",
     "simulation": {
       "review": {
         "status": "not_confirmed",

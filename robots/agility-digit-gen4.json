@@ -33,6 +33,8 @@
     "timeline": [],
     "evidence": [
       {
+        "kind": "deployment",
+        "customer": "GXO / SPANX",
         "detail": "GXO reports Digit robots operational at its SPANX warehouse by the 27 June 2024 publication; the source does not establish the delivery day or count.",
         "source": {
           "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics",
@@ -51,6 +53,8 @@
         }
       },
       {
+        "kind": "deployment",
+        "customer": "GXO / SPANX",
         "detail": "Agility retrospectively identifies the customer-site generation at GXO as Digit 4. This links GXO’s operational report to this record; it does not establish an exact arrival date or independent verification.",
         "source": {
           "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
@@ -69,6 +73,8 @@
         }
       },
       {
+        "kind": "pilot",
+        "customer": "Amazon",
         "detail": "Amazon announced it would begin testing Digit; this wording does not establish receipt on publication day.",
         "source": {
           "url": "https://www.aboutamazon.com/news/operations/amazon-introduces-new-robotics-solutions",

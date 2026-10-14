@@ -382,6 +382,11 @@ metadata.
 { "date": "YYYY-MM-DD", "amount": <number>, "currency": "USD", "variant": "string", "status": "claimed|demonstrated|shipped", "source": { ... } }
 ```
 
+Recurring prices (subscription or lease rates) are recorded with an optional
+`"period": "month" | "year"`; an entry without `period` is a one-off purchase
+price. Recurring prices never count as the robot's price in facets,
+comparisons, cards or OG images.
+
 ## Delivery
 
 `delivery.status` is the robot's current overall standing: `shipped`,
@@ -402,13 +407,17 @@ delivery date, record it in the optional `delivery.evidence` array instead of
 inventing a timeline date:
 
 ```json
-{ "detail": "Named customer shown with the physical unit.", "source": { ... } }
+{ "kind": "receipt", "customer": "Named recipient", "detail": "Named recipient reports receipt of the physical unit.", "source": { ... } }
 ```
 
 When present, `delivery.evidence` must be a non-empty array. Every item needs a
 non-empty `detail` and a standard source object. Source review describes how
 well that source supports the receipt claim; it does not establish an exact
-delivery day or independent verification.
+delivery day or independent verification. The optional `kind` is one of
+`receipt | deployment | pilot | arrival`; the optional `customer` is the
+named recipient or customer site. These additive fields distinguish a receipt
+report from presence at a customer site. Older records without them remain
+valid and cannot satisfy a receipt-specific query.
 
 ## The three statuses, precisely
 
@@ -519,6 +528,32 @@ Humanoid Robot Baseline Performance Benchmark, still under development,
 will publish only results aggregated across manufacturers, not per-robot,
 per-run data) -- competition results are therefore reported alongside, not
 folded into, the `claimed / demonstrated / shipped` ladder.
+
+## Safety review and incident register
+
+Robot records may contain an optional `safety` object with
+`emergency_stop`, `motion_limits`, and `operator_logging`. Each field has a
+`status` of `unknown | documented | not_confirmed`. Missing fields and
+`unknown` render as **Not yet reviewed**: the register has not reviewed or
+found documentation for that field. This is not evidence that a feature is
+absent, does not certify a protection, and must not be used to infer how the
+robot behaves in every setting. `documented` and `not_confirmed` both require
+a standard claim source; `unknown` cannot carry a source.
+
+`data/incidents.json` is a separate versioned register of public reports. An
+incident requires a unique slug, publication and review dates, location,
+investigation status, attributed facts, explicit limits and standard sources.
+`occurred_at` is `null` when the reviewed reporting does not establish an
+exact date. `control_mode.value` can remain `under_investigation`; its
+`reports[]` preserve the control descriptions and uncertainties from each
+source instead of resolving them by guesswork. `robot.slug` is nullable and,
+when present, must match a robot record. A general link from robot safety
+sections to the incident register never establishes that the model was
+involved in an incident.
+
+The validator rejects unsupported `documented` or `not_confirmed` safety
+states, source references outside an incident, and incident links to unknown
+robot slugs.
 
 ## Validation
 

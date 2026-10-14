@@ -98,6 +98,7 @@
       "amount": 499,
       "currency": "USD",
       "variant": "monthly subscription",
+      "period": "month",
       "status": "claimed",
       "source": {
         "url": "https://www.1x.tech/discover/neo-home-robot",

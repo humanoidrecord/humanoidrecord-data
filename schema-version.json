@@ -1,11 +1,14 @@
 {
-  "schemaVersion": "2.3",
+  "schemaVersion": "2.5",
   "changes": [
+    "Adds optional robot safety review fields with source-bound documented or not-confirmed states and a neutral unknown default.",
+    "Adds a separate incident register with attributed control-mode reports, uncertainty and optional validated robot references.",
     "Adds optional media type, publisher relation and concrete robot variant to claim sources.",
     "Adds optional per-claim source review status, method, checked date and reason.",
     "Adds optional evidence dates and explicit video segment end timestamps.",
     "Adds optional, additive simulation research records with targeted-search status, sourced artifacts, provenance, revision, license and documented or tested simulator compatibility.",
     "Adds optional, additive actuator architecture research records with targeted-search status, sourced joint groups, evidence status, drive, transmission, motion and architecture.",
-    "Adds optional delivery evidence records for sourced physical receipt claims that do not establish an exact delivery date."
+    "Adds optional delivery evidence records for sourced physical receipt claims that do not establish an exact delivery date.",
+    "Adds optional delivery evidence kind and named-customer metadata so receipt, deployment, pilot and arrival records can be queried without changing the global delivery status."
   ]
 }

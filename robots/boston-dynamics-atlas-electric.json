@@ -38,17 +38,18 @@
       "value": 56,
       "status": "claimed",
       "source": {
-        "url": "https://bostondynamics.com/atlas/",
-        "quote": "56",
-        "accessed": "2026-09-27",
+        "url": "https://bostondynamics.com/products/atlas/",
+        "quote": "DoF 56",
+        "accessed": "2026-10-04",
         "media_type": "documentation",
         "publisher_type": "official",
         "review": {
-          "status": "insufficient",
+          "status": "supported",
           "method": "text",
-          "checked": "2026-09-27",
-          "reason": "The reviewed source did not establish both the exact recorded value and the concrete robot variant for this specification."
-        }
+          "checked": "2026-10-04",
+          "reason": "The official product page explicitly lists 56 degrees of freedom for the current industrial Atlas product."
+        },
+        "variant": "Atlas industrial product version (2026)"
       }
     },
     "battery_runtime_min": {
@@ -218,7 +219,7 @@
     "battery_wh, charge_time_min, actuator_torque_nm, sdk, and warranty remain omitted for lack of Atlas-specific figures. No exact first-customer-delivery event or automotive delivery sector is asserted.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for electric Atlas -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-27",
+  "updated": "2026-10-04",
   "order_type": {
     "value": "quote",
     "status": "claimed",

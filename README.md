@@ -44,7 +44,7 @@ merged.
 ## Citing this data
 
 ```
-Data from humanoidrecord.com, CC BY 4.0. Retrieved 2026-09-27 from
+Data from humanoidrecord.com, CC BY 4.0. Retrieved 2026-10-14 from
 https://github.com/humanoidrecord/humanoidrecord-data
 ```
 

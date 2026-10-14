@@ -162,6 +162,8 @@
     ],
     "evidence": [
       {
+        "kind": "receipt",
+        "customer": "Fraunhofer IPA",
         "detail": "Fraunhofer IPA says it received a Unitree G1 EDU-4 with Dex3-1 hands in May 2025; the source gives a month, not a day.",
         "source": {
           "url": "https://www.ipa.fraunhofer.de/en/press-media/press_releases/benchmark-for-humanoid-robots.html",
@@ -180,6 +182,8 @@
         }
       },
       {
+        "kind": "receipt",
+        "customer": "Fraunhofer IPA",
         "detail": "Fraunhofer IPA separately describes a G1 crate arriving at its campus and an unboxing event; this supports physical receipt but no exact day.",
         "source": {
           "url": "https://interaktiv.ipa.fraunhofer.de/embodied-ai/humanoide-roboter_statusquo-potenziale-forschungsfelder_teil1/",
@@ -198,6 +202,8 @@
         }
       },
       {
+        "kind": "receipt",
+        "customer": "Durham University",
         "detail": "Durham University says its Computer Science department has welcomed Alan, a Unitree G1 Edu robot; publication on 1 April 2026 is not a delivery date.",
         "source": {
           "url": "https://dur.ac.uk/news-events/latest-news/2026/04/durhams-new-humanoid-robot-to-support-cutting-edge-research/",

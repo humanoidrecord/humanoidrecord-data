@@ -8,11 +8,20 @@
   },
   "category": "full-size",
   "announced": {
-    "date": "2026-06-25",
+    "date": "2025-10-09",
     "source": {
-      "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
-      "quote": "Figure 03 is an upgraded humanoid robot from Figure AI, announced for Spartanburg on June 25, 2026",
-      "accessed": "2026-09-20"
+      "url": "https://www.figure.ai/news/introducing-figure-03",
+      "quote": "Today we’re introducing Figure 03, our 3rd generation humanoid robot.",
+      "accessed": "2026-10-04",
+      "media_type": "documentation",
+      "publisher_type": "official",
+      "review": {
+        "status": "supported",
+        "method": "text",
+        "checked": "2026-10-04",
+        "reason": "The manufacturer explicitly introduces Figure 03 and dates the announcement October 9, 2025."
+      },
+      "variant": "Figure 03"
     }
   },
   "specs": {
@@ -31,17 +40,25 @@
     "status": "shipped",
     "timeline": [
       {
-        "date": "2026-06-25",
+        "date": "2025-10-09",
         "event": "announced",
-        "detail": "Figure 03 announced as successor to Figure 02, with soft safety components, wireless charging, tactile-sensor hands, and speech-to-speech communication.",
+        "detail": "Figure introduces its third-generation humanoid, Figure 03, designed for Helix, home use and high-volume manufacturing.",
         "quantity_min": null,
         "quantity_max": null,
         "source": {
-          "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
-          "quote": "Figure 03 is an upgraded humanoid robot from Figure AI, announced for Spartanburg on June 25, 2026, with soft safety components, wireless charging, speech-to-speech communication, and improved tactile-sensor hands.",
-          "accessed": "2026-09-20"
-        },
-        "sector": "automotive"
+          "url": "https://www.figure.ai/news/introducing-figure-03",
+          "quote": "Today we’re introducing Figure 03, our 3rd generation humanoid robot.",
+          "accessed": "2026-10-04",
+          "media_type": "documentation",
+          "publisher_type": "official",
+          "review": {
+            "status": "supported",
+            "method": "text",
+            "checked": "2026-10-04",
+            "reason": "The manufacturer explicitly introduces Figure 03 and dates the announcement October 9, 2025."
+          },
+          "variant": "Figure 03"
+        }
       },
       {
         "date": "2026-06-30",
@@ -59,6 +76,8 @@
     ],
     "evidence": [
       {
+        "kind": "arrival",
+        "customer": "BMW Group",
         "detail": "BMW’s photo compilation captions identify Figure 03 at BMW Group Plant Spartanburg by 25 June 2026; the caption establishes reported physical presence, not sale or handover day.",
         "source": {
           "url": "https://www.press.bmwgroup.com/global/photo/compilation/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
@@ -77,6 +96,8 @@
         }
       },
       {
+        "kind": "arrival",
+        "customer": "BMW Group",
         "detail": "Figure reports that Figure 03 arrived in Hall 52 at BMW Group Plant Spartanburg for a first logistics demonstration; arrival day and commercial terms are not stated.",
         "source": {
           "url": "https://www.figure.ai/news/f-03-at-bmw",
@@ -133,10 +154,10 @@
   "notes": [
     "No manufacturer-published height/weight/DoF spec sheet for Figure 03 was located on figure.ai during this build (figure.ai/product returned HTTP 404); specs are left empty rather than filled from secondary blogs. Follow-up: check Figure's press kit or a dated product page once published.",
     "Shipped bar: BMW’s own dated photo captions identify a Figure 03 at Plant Spartanburg, and Figure says the model arrived in Hall 52 for a logistics demonstration. This supports exact-model presence at a named customer, but no exact delivery day, sale, transfer of title, quantity, or scaled operation.",
-    "The announced and first-demo timeline events retain their automotive sector. No exact first-customer-delivery event is asserted.",
+    "The general introduction timeline event has no sector; the first-demo event retains its automotive sector. No exact first-customer-delivery event is asserted.",
     "locomotion left out (2026-09-21): searched the manufacturer's own product/press page and its main launch coverage (The Robot Report / IEEE Spectrum / named outlet where applicable) for a literal quote naming the propulsion (\"bipedal\", \"legs\", \"walks\", \"wheeled base\", etc.); none of the pages fetched in this pass contained a checkable sentence naming it specifically for Figure 03 -- most pages describe height/DOF/speed without ever stating the locomotion type in words. Left out rather than inferred from photos or category. Revisit with a source that states it directly."
   ],
-  "updated": "2026-09-27",
+  "updated": "2026-10-04",
   "media": [
     {
       "type": "patent",

@@ -94,6 +94,8 @@
     ],
     "evidence": [
       {
+        "kind": "pilot",
+        "customer": "Mercedes-Benz",
         "detail": "Mercedes-Benz says Apollo units were present at its Digital Factory Campus and collecting data in a production environment by its 18 March 2025 publication. The source does not identify their hardware generation or establish an arrival day, transaction type, or quantity.",
         "source": {
           "url": "https://group.mercedes-benz.com/company/production/production-network/mbdfc-humanoid-robots.html",
